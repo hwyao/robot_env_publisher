@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="robot_env_publisher" type="obstacle_publisher" name="dynamic_obstacle_publisher" output="screen"/>
+</launch>
+
