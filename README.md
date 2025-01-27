@@ -1,7 +1,7 @@
 # robot_env_publisher
 
-using moveit_msgs ![`CollisionObject.msg`](http://docs.ros.org/en/noetic/api/moveit_msgs/html/msg/CollisionObject.html)
-
+using moveit_msgs [`CollisionObject.msg`]
+http://docs.ros.org/en/noetic/api/moveit_msgs/html/msg/CollisionObject.html
 ![image](https://github.com/user-attachments/assets/56b16f18-66f9-4ce5-857b-0e318a1f81bc)
 
 
