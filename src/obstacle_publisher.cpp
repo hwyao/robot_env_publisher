@@ -1,5 +1,6 @@
 #include <ros/ros.h>
 #include <moveit_msgs/CollisionObject.h>
+#include <moveit_msgs/PlanningScene.h> 
 #include <yaml-cpp/yaml.h>
 #include <geometry_msgs/Pose.h>
 #include <shape_msgs/SolidPrimitive.h>
@@ -115,17 +116,51 @@ std::vector<Obstacle> readObstacles(const YAML::Node& node)
 }
 
 
-// 发布障碍物
+// void publishObstacles(ros::Publisher& pub, const std::vector<Obstacle>& obstacles) 
+// {
+//     for (const auto& obstacle : obstacles) 
+//     {
+//         moveit_msgs::CollisionObject collision_obj;
+//         collision_obj.header.frame_id = "world";
+//         collision_obj.id = obstacle.name_;
+//         collision_obj.operation = moveit_msgs::CollisionObject::ADD;
+
+//         // using geometry_msgs as type of topic message 
+//         geometry_msgs::Pose pose;
+//         pose.position.x = obstacle.pos_.x();
+//         pose.position.y = obstacle.pos_.y();
+//         pose.position.z = obstacle.pos_.z();
+//         pose.orientation.w = 1.0; 
+//         collision_obj.primitive_poses.push_back(pose);
+
+//         // obstacle shape type 
+//         /*#BOX=1 
+//           #SPHERE=2 
+//           #CYLINDER=3 
+//           #CONE=4 */
+//         shape_msgs::SolidPrimitive primitive;
+//         primitive.type = shape_msgs::SolidPrimitive::SPHERE;
+//         primitive.dimensions.push_back(obstacle.rad_);
+//         collision_obj.primitives.push_back(primitive);
+//         pub.publish(collision_obj);
+//     }
+// }
+
 void publishObstacles(ros::Publisher& pub, const std::vector<Obstacle>& obstacles) 
 {
+    
+    moveit_msgs::PlanningScene planning_scene_msg;
+    planning_scene_msg.is_diff = true; 
+
     for (const auto& obstacle : obstacles) 
     {
+        
         moveit_msgs::CollisionObject collision_obj;
-        collision_obj.header.frame_id = "world";
+        collision_obj.header.frame_id = "panda_link0";
         collision_obj.id = obstacle.name_;
         collision_obj.operation = moveit_msgs::CollisionObject::ADD;
 
-        // using geometry_msgs as type of topic message 
+
         geometry_msgs::Pose pose;
         pose.position.x = obstacle.pos_.x();
         pose.position.y = obstacle.pos_.y();
@@ -133,17 +168,16 @@ void publishObstacles(ros::Publisher& pub, const std::vector<Obstacle>& obstacle
         pose.orientation.w = 1.0; 
         collision_obj.primitive_poses.push_back(pose);
 
-        // obstacle shape type 
-        /*#BOX=1 
-          #SPHERE=2 
-          #CYLINDER=3 
-          #CONE=4 */
+        
         shape_msgs::SolidPrimitive primitive;
         primitive.type = shape_msgs::SolidPrimitive::SPHERE;
         primitive.dimensions.push_back(obstacle.rad_);
         collision_obj.primitives.push_back(primitive);
-        pub.publish(collision_obj);
+
+        planning_scene_msg.world.collision_objects.push_back(collision_obj);
     }
+
+    pub.publish(planning_scene_msg);
 }
 
 int main(int argc, char** argv) {
@@ -154,8 +188,8 @@ int main(int argc, char** argv) {
     YAML::Node obstacles_yaml = YAML::LoadFile(package_path + "/config/obstacles_1.yaml");
     std::vector<Obstacle> obstacles = readObstacles(obstacles_yaml["obstacles"]);
 
-    ros::Publisher obstacle_pub = nh.advertise<moveit_msgs::CollisionObject>("collision_object", 10);
-
+    //ros::Publisher obstacle_pub = nh.advertise<moveit_msgs::CollisionObject>("collision_object", 10);
+    ros::Publisher obstacle_pub = nh.advertise<moveit_msgs::PlanningScene>("planning_scene", 10);
     ros::Rate rate(10);
     while (ros::ok()) 
     {
@@ -166,6 +200,7 @@ int main(int argc, char** argv) {
         }
 
         publishObstacles(obstacle_pub, obstacles);
+        ROS_INFO("Publish obstacle planning_scene");
 
         rate.sleep();
     }
