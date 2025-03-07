@@ -9,7 +9,7 @@ project(robot_env_publisher)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   moveit_msgs
-  roscpp
+  roscpto
   rospy
   std_msgs
   # yaml-cpp

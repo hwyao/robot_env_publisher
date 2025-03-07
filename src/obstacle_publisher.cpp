@@ -60,7 +60,7 @@ class Obstacle {
     double getAngularSpeed() const { return angular_speed_; }
 
     // Update position for dynamic obstacles
-void updatePosition(double delta_time) 
+void updatePosition(double delta_time)  //TODO Define more complex scenarios
 {
     if (is_dynamic_)  // if is_dynamic, movement traj is a circle 
     {
@@ -116,36 +116,6 @@ std::vector<Obstacle> readObstacles(const YAML::Node& node)
 }
 
 
-// void publishObstacles(ros::Publisher& pub, const std::vector<Obstacle>& obstacles) 
-// {
-//     for (const auto& obstacle : obstacles) 
-//     {
-//         moveit_msgs::CollisionObject collision_obj;
-//         collision_obj.header.frame_id = "world";
-//         collision_obj.id = obstacle.name_;
-//         collision_obj.operation = moveit_msgs::CollisionObject::ADD;
-
-//         // using geometry_msgs as type of topic message 
-//         geometry_msgs::Pose pose;
-//         pose.position.x = obstacle.pos_.x();
-//         pose.position.y = obstacle.pos_.y();
-//         pose.position.z = obstacle.pos_.z();
-//         pose.orientation.w = 1.0; 
-//         collision_obj.primitive_poses.push_back(pose);
-
-//         // obstacle shape type 
-//         /*#BOX=1 
-//           #SPHERE=2 
-//           #CYLINDER=3 
-//           #CONE=4 */
-//         shape_msgs::SolidPrimitive primitive;
-//         primitive.type = shape_msgs::SolidPrimitive::SPHERE;
-//         primitive.dimensions.push_back(obstacle.rad_);
-//         collision_obj.primitives.push_back(primitive);
-//         pub.publish(collision_obj);
-//     }
-// }
-
 void publishObstacles(ros::Publisher& pub, const std::vector<Obstacle>& obstacles) 
 {
     
@@ -156,7 +126,7 @@ void publishObstacles(ros::Publisher& pub, const std::vector<Obstacle>& obstacle
     {
         
         moveit_msgs::CollisionObject collision_obj;
-        collision_obj.header.frame_id = "panda_link0";
+        collision_obj.header.frame_id = "map";
         collision_obj.id = obstacle.name_;
         collision_obj.operation = moveit_msgs::CollisionObject::ADD;
 
@@ -185,7 +155,7 @@ int main(int argc, char** argv) {
     ros::NodeHandle nh;
 
     std::string package_path = ros::package::getPath("robot_env_publisher");
-    YAML::Node obstacles_yaml = YAML::LoadFile(package_path + "/config/obstacles_1.yaml");
+    YAML::Node obstacles_yaml = YAML::LoadFile(package_path + "/config/obstacles_T.yaml");
     std::vector<Obstacle> obstacles = readObstacles(obstacles_yaml["obstacles"]);
 
     //ros::Publisher obstacle_pub = nh.advertise<moveit_msgs::CollisionObject>("collision_object", 10);

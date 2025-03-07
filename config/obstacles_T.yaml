@@ -1,0 +1,2305 @@
+obstacles:
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_0_0
+  position:
+  - 4.5
+  - 0.0
+  - -1.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_0_1
+  position:
+  - 4.5
+  - 0.0
+  - -0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_0_2
+  position:
+  - 4.5
+  - 0.0
+  - 0.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_0_3
+  position:
+  - 4.5
+  - 0.0
+  - 0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_1_0
+  position:
+  - 4.5
+  - 0.5
+  - -1.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_1_1
+  position:
+  - 4.5
+  - 0.5
+  - -0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_1_2
+  position:
+  - 4.5
+  - 0.5
+  - 0.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_1_3
+  position:
+  - 4.5
+  - 0.5
+  - 0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_2_0
+  position:
+  - 4.5
+  - 1.0
+  - -1.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_2_1
+  position:
+  - 4.5
+  - 1.0
+  - -0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_2_2
+  position:
+  - 4.5
+  - 1.0
+  - 0.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_2_3
+  position:
+  - 4.5
+  - 1.0
+  - 0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_3_0
+  position:
+  - 4.5
+  - 1.5
+  - -1.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_3_1
+  position:
+  - 4.5
+  - 1.5
+  - -0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_3_2
+  position:
+  - 4.5
+  - 1.5
+  - 0.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_3_3
+  position:
+  - 4.5
+  - 1.5
+  - 0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_4_0
+  position:
+  - 4.5
+  - 2.0
+  - -1.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_4_1
+  position:
+  - 4.5
+  - 2.0
+  - -0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_4_2
+  position:
+  - 4.5
+  - 2.0
+  - 0.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_4_3
+  position:
+  - 4.5
+  - 2.0
+  - 0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_5_0
+  position:
+  - 4.5
+  - 2.5
+  - -1.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_5_1
+  position:
+  - 4.5
+  - 2.5
+  - -0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_5_2
+  position:
+  - 4.5
+  - 2.5
+  - 0.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_5_3
+  position:
+  - 4.5
+  - 2.5
+  - 0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_6_0
+  position:
+  - 4.5
+  - 3.0
+  - -1.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_6_1
+  position:
+  - 4.5
+  - 3.0
+  - -0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_6_2
+  position:
+  - 4.5
+  - 3.0
+  - 0.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_6_3
+  position:
+  - 4.5
+  - 3.0
+  - 0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_7_0
+  position:
+  - 4.5
+  - 3.5
+  - -1.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_7_1
+  position:
+  - 4.5
+  - 3.5
+  - -0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_7_2
+  position:
+  - 4.5
+  - 3.5
+  - 0.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_7_3
+  position:
+  - 4.5
+  - 3.5
+  - 0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_0_0
+  position:
+  - 4.5
+  - 0.0
+  - -1.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_0_1
+  position:
+  - 4.5
+  - 0.0
+  - -0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_0_2
+  position:
+  - 4.5
+  - 0.0
+  - 0.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_0_3
+  position:
+  - 4.5
+  - 0.0
+  - 0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_1_0
+  position:
+  - 4.5
+  - -0.5
+  - -1.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_1_1
+  position:
+  - 4.5
+  - -0.5
+  - -0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_1_2
+  position:
+  - 4.5
+  - -0.5
+  - 0.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_1_3
+  position:
+  - 4.5
+  - -0.5
+  - 0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_2_0
+  position:
+  - 4.5
+  - -1.0
+  - -1.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_2_1
+  position:
+  - 4.5
+  - -1.0
+  - -0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_2_2
+  position:
+  - 4.5
+  - -1.0
+  - 0.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_2_3
+  position:
+  - 4.5
+  - -1.0
+  - 0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_3_0
+  position:
+  - 4.5
+  - -1.5
+  - -1.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_3_1
+  position:
+  - 4.5
+  - -1.5
+  - -0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_3_2
+  position:
+  - 4.5
+  - -1.5
+  - 0.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_3_3
+  position:
+  - 4.5
+  - -1.5
+  - 0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_4_0
+  position:
+  - 4.5
+  - -2.0
+  - -1.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_4_1
+  position:
+  - 4.5
+  - -2.0
+  - -0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_4_2
+  position:
+  - 4.5
+  - -2.0
+  - 0.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_4_3
+  position:
+  - 4.5
+  - -2.0
+  - 0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_5_0
+  position:
+  - 4.5
+  - -2.5
+  - -1.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_5_1
+  position:
+  - 4.5
+  - -2.5
+  - -0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_5_2
+  position:
+  - 4.5
+  - -2.5
+  - 0.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_5_3
+  position:
+  - 4.5
+  - -2.5
+  - 0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_6_0
+  position:
+  - 4.5
+  - -3.0
+  - -1.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_6_1
+  position:
+  - 4.5
+  - -3.0
+  - -0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_6_2
+  position:
+  - 4.5
+  - -3.0
+  - 0.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_6_3
+  position:
+  - 4.5
+  - -3.0
+  - 0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_7_0
+  position:
+  - 4.5
+  - -3.5
+  - -1.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_7_1
+  position:
+  - 4.5
+  - -3.5
+  - -0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_7_2
+  position:
+  - 4.5
+  - -3.5
+  - 0.0
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: VerticalWall_Ball_7_3
+  position:
+  - 4.5
+  - -3.5
+  - 0.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_0_0
+  position:
+  - 4.0
+  - 0.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_0_1
+  position:
+  - 4.0
+  - 0.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_0_2
+  position:
+  - 4.0
+  - 1.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_0_3
+  position:
+  - 4.0
+  - 1.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_0_4
+  position:
+  - 4.0
+  - 2.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_0_5
+  position:
+  - 4.0
+  - 2.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_0_6
+  position:
+  - 4.0
+  - 3.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_0_7
+  position:
+  - 4.0
+  - 3.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_1_0
+  position:
+  - 4.5
+  - 0.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_1_1
+  position:
+  - 4.5
+  - 0.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_1_2
+  position:
+  - 4.5
+  - 1.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_1_3
+  position:
+  - 4.5
+  - 1.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_1_4
+  position:
+  - 4.5
+  - 2.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_1_5
+  position:
+  - 4.5
+  - 2.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_1_6
+  position:
+  - 4.5
+  - 3.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_1_7
+  position:
+  - 4.5
+  - 3.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_2_0
+  position:
+  - 5.0
+  - 0.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_2_1
+  position:
+  - 5.0
+  - 0.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_2_2
+  position:
+  - 5.0
+  - 1.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_2_3
+  position:
+  - 5.0
+  - 1.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_2_4
+  position:
+  - 5.0
+  - 2.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_2_5
+  position:
+  - 5.0
+  - 2.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_2_6
+  position:
+  - 5.0
+  - 3.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_2_7
+  position:
+  - 5.0
+  - 3.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_3_0
+  position:
+  - 5.5
+  - 0.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_3_1
+  position:
+  - 5.5
+  - 0.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_3_2
+  position:
+  - 5.5
+  - 1.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_3_3
+  position:
+  - 5.5
+  - 1.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_3_4
+  position:
+  - 5.5
+  - 2.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_3_5
+  position:
+  - 5.5
+  - 2.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_3_6
+  position:
+  - 5.5
+  - 3.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_3_7
+  position:
+  - 5.5
+  - 3.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_0_0
+  position:
+  - 4.0
+  - 0.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_0_1
+  position:
+  - 4.0
+  - -0.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_0_2
+  position:
+  - 4.0
+  - -1.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_0_3
+  position:
+  - 4.0
+  - -1.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_0_4
+  position:
+  - 4.0
+  - -2.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_0_5
+  position:
+  - 4.0
+  - -2.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_0_6
+  position:
+  - 4.0
+  - -3.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_0_7
+  position:
+  - 4.0
+  - -3.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_1_0
+  position:
+  - 4.5
+  - 0.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_1_1
+  position:
+  - 4.5
+  - -0.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_1_2
+  position:
+  - 4.5
+  - -1.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_1_3
+  position:
+  - 4.5
+  - -1.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_1_4
+  position:
+  - 4.5
+  - -2.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_1_5
+  position:
+  - 4.5
+  - -2.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_1_6
+  position:
+  - 4.5
+  - -3.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_1_7
+  position:
+  - 4.5
+  - -3.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_2_0
+  position:
+  - 5.0
+  - 0.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_2_1
+  position:
+  - 5.0
+  - -0.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_2_2
+  position:
+  - 5.0
+  - -1.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_2_3
+  position:
+  - 5.0
+  - -1.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_2_4
+  position:
+  - 5.0
+  - -2.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_2_5
+  position:
+  - 5.0
+  - -2.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_2_6
+  position:
+  - 5.0
+  - -3.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_2_7
+  position:
+  - 5.0
+  - -3.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_3_0
+  position:
+  - 5.5
+  - 0.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_3_1
+  position:
+  - 5.5
+  - -0.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_3_2
+  position:
+  - 5.5
+  - -1.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_3_3
+  position:
+  - 5.5
+  - -1.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_3_4
+  position:
+  - 5.5
+  - -2.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_3_5
+  position:
+  - 5.5
+  - -2.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_3_6
+  position:
+  - 5.5
+  - -3.0
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: TopWall_Ball_3_7
+  position:
+  - 5.5
+  - -3.5
+  - 2.2
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_0_0
+  position:
+  - 4.0
+  - 0.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_0_1
+  position:
+  - 4.0
+  - 0.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_0_2
+  position:
+  - 4.0
+  - 1.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_0_3
+  position:
+  - 4.0
+  - 1.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_0_4
+  position:
+  - 4.0
+  - 2.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_0_5
+  position:
+  - 4.0
+  - 2.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_0_6
+  position:
+  - 4.0
+  - 3.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_0_7
+  position:
+  - 4.0
+  - 3.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_1_0
+  position:
+  - 4.5
+  - 0.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_1_1
+  position:
+  - 4.5
+  - 0.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_1_2
+  position:
+  - 4.5
+  - 1.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_1_3
+  position:
+  - 4.5
+  - 1.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_1_4
+  position:
+  - 4.5
+  - 2.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_1_5
+  position:
+  - 4.5
+  - 2.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_1_6
+  position:
+  - 4.5
+  - 3.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_1_7
+  position:
+  - 4.5
+  - 3.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_2_0
+  position:
+  - 5.0
+  - 0.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_2_1
+  position:
+  - 5.0
+  - 0.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_2_2
+  position:
+  - 5.0
+  - 1.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_2_3
+  position:
+  - 5.0
+  - 1.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_2_4
+  position:
+  - 5.0
+  - 2.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_2_5
+  position:
+  - 5.0
+  - 2.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_2_6
+  position:
+  - 5.0
+  - 3.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_2_7
+  position:
+  - 5.0
+  - 3.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_3_0
+  position:
+  - 5.5
+  - 0.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_3_1
+  position:
+  - 5.5
+  - 0.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_3_2
+  position:
+  - 5.5
+  - 1.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_3_3
+  position:
+  - 5.5
+  - 1.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_3_4
+  position:
+  - 5.5
+  - 2.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_3_5
+  position:
+  - 5.5
+  - 2.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_3_6
+  position:
+  - 5.5
+  - 3.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_3_7
+  position:
+  - 5.5
+  - 3.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_0_0
+  position:
+  - 4.0
+  - 0.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_0_1
+  position:
+  - 4.0
+  - -0.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_0_2
+  position:
+  - 4.0
+  - -1.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_0_3
+  position:
+  - 4.0
+  - -1.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_0_4
+  position:
+  - 4.0
+  - -2.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_0_5
+  position:
+  - 4.0
+  - -2.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_0_6
+  position:
+  - 4.0
+  - -3.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_0_7
+  position:
+  - 4.0
+  - -3.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_1_0
+  position:
+  - 4.5
+  - 0.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_1_1
+  position:
+  - 4.5
+  - -0.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_1_2
+  position:
+  - 4.5
+  - -1.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_1_3
+  position:
+  - 4.5
+  - -1.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_1_4
+  position:
+  - 4.5
+  - -2.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_1_5
+  position:
+  - 4.5
+  - -2.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_1_6
+  position:
+  - 4.5
+  - -3.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_1_7
+  position:
+  - 4.5
+  - -3.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_2_0
+  position:
+  - 5.0
+  - 0.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_2_1
+  position:
+  - 5.0
+  - -0.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_2_2
+  position:
+  - 5.0
+  - -1.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_2_3
+  position:
+  - 5.0
+  - -1.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_2_4
+  position:
+  - 5.0
+  - -2.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_2_5
+  position:
+  - 5.0
+  - -2.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_2_6
+  position:
+  - 5.0
+  - -3.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_2_7
+  position:
+  - 5.0
+  - -3.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_3_0
+  position:
+  - 5.5
+  - 0.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_3_1
+  position:
+  - 5.5
+  - -0.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_3_2
+  position:
+  - 5.5
+  - -1.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_3_3
+  position:
+  - 5.5
+  - -1.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_3_4
+  position:
+  - 5.5
+  - -2.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_3_5
+  position:
+  - 5.5
+  - -2.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_3_6
+  position:
+  - 5.5
+  - -3.0
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
+- angular_speed: 0.1
+  is_dynamic: false
+  name: BottomWall_Ball_3_7
+  position:
+  - 5.5
+  - -3.5
+  - -1.5
+  radius: 0.4
+  velocity:
+  - 0.0
+  - 0.0
+  - 0.0
