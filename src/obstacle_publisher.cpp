@@ -132,6 +132,7 @@ void publishObstacles(ros::Publisher& pub, const std::vector<Obstacle>& obstacle
 
 
         geometry_msgs::Pose pose;
+        
         pose.position.x = obstacle.pos_.x();
         pose.position.y = obstacle.pos_.y();
         pose.position.z = obstacle.pos_.z();
@@ -155,7 +156,7 @@ int main(int argc, char** argv) {
     ros::NodeHandle nh;
 
     std::string package_path = ros::package::getPath("robot_env_publisher");
-    YAML::Node obstacles_yaml = YAML::LoadFile(package_path + "/config/obstacles_T.yaml");
+    YAML::Node obstacles_yaml = YAML::LoadFile(package_path + "/config/obstacles_1.yaml");
     std::vector<Obstacle> obstacles = readObstacles(obstacles_yaml["obstacles"]);
 
     //ros::Publisher obstacle_pub = nh.advertise<moveit_msgs::CollisionObject>("collision_object", 10);
