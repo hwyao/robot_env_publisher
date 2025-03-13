@@ -151,19 +151,34 @@ void publishObstacles(ros::Publisher& pub, const std::vector<Obstacle>& obstacle
     pub.publish(planning_scene_msg);
 }
 
+
 int main(int argc, char** argv) {
     ros::init(argc, argv, "dynamic_obstacle_publisher");
     ros::NodeHandle nh;
 
     std::string package_path = ros::package::getPath("robot_env_publisher");
-    YAML::Node obstacles_yaml = YAML::LoadFile(package_path + "/config/obstacles_1.yaml");
+    YAML::Node obstacles_yaml = YAML::LoadFile(package_path + "/config/obstacles_T.yaml");
     std::vector<Obstacle> obstacles = readObstacles(obstacles_yaml["obstacles"]);
 
     //ros::Publisher obstacle_pub = nh.advertise<moveit_msgs::CollisionObject>("collision_object", 10);
     ros::Publisher obstacle_pub = nh.advertise<moveit_msgs::PlanningScene>("planning_scene", 10);
+    ros::Publisher goal_pub = nh.advertise<geometry_msgs::Point>("goal_position", 10);
+    //get goal position from yaml file
+    std::string package_path_multi_agent = ros::package::getPath("multi_agent_vector_fields");
+    YAML::Node start_goal = YAML::LoadFile(package_path_multi_agent + "/config/start_goal.yaml");
+    Eigen::Vector3d goal_pos = readVector3d(start_goal["goal_pos"]);
+
+    geometry_msgs::Point goal_msg;
+    goal_msg.x = goal_pos.x();
+    goal_msg.y = goal_pos.y();
+    goal_msg.z = goal_pos.z();
+
     ros::Rate rate(10);
     while (ros::ok()) 
     {
+
+        
+        goal_pub.publish(goal_msg);
         
         for (auto& obstacle : obstacles) 
         {
