@@ -18,12 +18,12 @@ class Obstacle {
    public:
     std::string name_;
     Eigen::Vector3d pos_;
-    Eigen::Vector3d vel_;
+    Eigen::Vector3d vel_;    //Linear velocity x, y, z 
     double rad_;
-    Eigen::Vector3d center_; // For dynamic obstacles
-    bool is_dynamic_; 
-    double angular_speed_; // Angular speed
-    int direction_; 
+    Eigen::Vector3d center_; //For dynamic obstacles moving around a center with angular speed
+    bool is_dynamic_;        //For dynamic obstacles moving around a center with angular speed
+    double angular_speed_;   //For dynamic obstacles moving around a center with angular speed
+    int direction_;          //For dynamic obstacles moving around a center with angular speed
 
    public:
     // Constructors
@@ -45,7 +45,6 @@ class Obstacle {
     Obstacle() : pos_{0, 0, 0}, rad_{0}, vel_{0, 0, 0}, name_{""},
                  center_{0, 0, 0}, is_dynamic_{false}, angular_speed_{0.0} {};
 
-    
     std::string getName() const { return name_; };
     Eigen::Vector3d getPosition() const { return pos_; };
     void setPosition(const Eigen::Vector3d& pos) { pos_ = pos; }
@@ -65,11 +64,7 @@ void updatePosition(double delta_time)  //TODO Define more complex scenarios
     if (is_dynamic_)  // if is_dynamic, movement traj is a circle 
     {
         // set traj center as position 
-        if (center_.isZero()) 
-        {
-            center_ = pos_; 
-        }
-
+        if (center_.isZero())  center_ = pos_; 
         double angle = direction_* angular_speed_ * delta_time;
         //double angle =  angular_speed_ * delta_time;
         Eigen::Vector3d offset = pos_ - center_;
@@ -81,7 +76,6 @@ void updatePosition(double delta_time)  //TODO Define more complex scenarios
         Eigen::Matrix3d rotation;
         rotation = Eigen::AngleAxisd(angle, Eigen::Vector3d::UnitZ());
         Eigen::Vector3d rotated_offset = rotation * offset;
-        
         pos_ = center_ + rotated_offset;
     } 
     else 
@@ -160,9 +154,9 @@ int main(int argc, char** argv) {
     YAML::Node obstacles_yaml = YAML::LoadFile(package_path + "/config/obstacles_T.yaml");
     std::vector<Obstacle> obstacles = readObstacles(obstacles_yaml["obstacles"]);
 
-    //ros::Publisher obstacle_pub = nh.advertise<moveit_msgs::CollisionObject>("collision_object", 10);
     ros::Publisher obstacle_pub = nh.advertise<moveit_msgs::PlanningScene>("planning_scene", 10);
     ros::Publisher goal_pub = nh.advertise<geometry_msgs::Point>("goal_position", 10);
+
     //get goal position from yaml file
     std::string package_path_multi_agent = ros::package::getPath("multi_agent_vector_fields");
     YAML::Node start_goal = YAML::LoadFile(package_path_multi_agent + "/config/start_goal.yaml");
@@ -176,15 +170,12 @@ int main(int argc, char** argv) {
     ros::Rate rate(10);
     while (ros::ok()) 
     {
-
-        
         goal_pub.publish(goal_msg);
         
         for (auto& obstacle : obstacles) 
         {
             obstacle.updatePosition(0.1); 
         }
-
         publishObstacles(obstacle_pub, obstacles);
         ROS_INFO("Publish obstacle planning_scene");
 
