@@ -151,7 +151,7 @@ int main(int argc, char** argv) {
     ros::NodeHandle nh;
 
     std::string package_path = ros::package::getPath("robot_env_publisher");
-    YAML::Node obstacles_yaml = YAML::LoadFile(package_path + "/config/obstacles_T.yaml");
+    YAML::Node obstacles_yaml = YAML::LoadFile(package_path + "/config/obstacles_1.yaml");
     std::vector<Obstacle> obstacles = readObstacles(obstacles_yaml["obstacles"]);
 
     ros::Publisher obstacle_pub = nh.advertise<moveit_msgs::PlanningScene>("planning_scene", 10);
@@ -177,7 +177,7 @@ int main(int argc, char** argv) {
             obstacle.updatePosition(0.1); 
         }
         publishObstacles(obstacle_pub, obstacles);
-        ROS_INFO("Publish obstacle planning_scene");
+        //ROS_INFO("Publish obstacle planning_scene");
 
         rate.sleep();
     }
