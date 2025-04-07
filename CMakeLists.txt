@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(robot_env_publisher)
 
+## Compile as C++11, supported in ROS Kinetic and newer
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
@@ -8,13 +12,13 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   roslib
   moveit_msgs
-  geometry_msgs
-  shape_msgs
+  visualization_msgs
 )
 
 ## System dependencies are found with CMake's conventions
 find_package(yaml-cpp REQUIRED)
 find_package(Eigen3 REQUIRED)
+find_package(pinocchio REQUIRED)
 
 ###################################
 ## catkin specific configuration ##
@@ -31,6 +35,7 @@ catkin_package(
 #  CATKIN_DEPENDS moveit_msgs roscpp rospy std_msgs yaml-cpp
 #  DEPENDS system_lib
 )
+add_compile_options(-g)
 
 ###########
 ## Build ##
@@ -38,17 +43,37 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-# include
+  include
   ${catkin_INCLUDE_DIRS}
 )
 
-## Declare a C++ executable
-add_executable(obstacle_publisher src/obstacle_publisher.cpp)
-target_link_libraries(obstacle_publisher
+add_library(robot_env_publisher
+  src/obstacle_interface.cpp
+)
+target_link_libraries(robot_env_publisher PUBLIC
   ${catkin_LIBRARIES}
   Eigen3::Eigen
+  pinocchio::pinocchio
   yaml-cpp
 )
+target_compile_features(robot_env_publisher PUBLIC 
+    cxx_std_17
+)
+
+## Declare C++ executables
+add_executable(obstacle_publisher src/obstacle_publisher.cpp)
+target_link_libraries(obstacle_publisher PRIVATE
+  robot_env_publisher
+)
+
+add_executable(file_env_node src/file_env_node.cpp)
+target_link_libraries(file_env_node PRIVATE
+  robot_env_publisher
+)
+target_compile_features(file_env_node PUBLIC 
+  cxx_std_17
+)
+
 #############
 ## Install ##
 #############
