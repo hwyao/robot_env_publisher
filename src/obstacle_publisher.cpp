@@ -1,10 +1,7 @@
 #include <ros/ros.h>
 #include <ros/package.h>
-#include <moveit_msgs/CollisionObject.h>
 #include <moveit_msgs/PlanningScene.h> 
-#include <geometry_msgs/Pose.h>
 #include <geometry_msgs/Point.h>
-#include <shape_msgs/SolidPrimitive.h>
 
 #include <string>
 #include <vector>
