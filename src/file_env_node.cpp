@@ -93,7 +93,7 @@ int main(int argc, char** argv) {
     // set up the publishers
     ros::Publisher goal_pub = nh.advertise<geometry_msgs::PoseStamped>("goal", 1);
     ros::Publisher obstacle_pub = nh.advertise<moveit_msgs::PlanningScene>("planning_scene", 1);
-    ros::Publisher obstacle_vis_pub = nh.advertise<visualization_msgs::Marker>("obstacle_markers", 1);
+    ros::Publisher obstacle_vis_pub = nh.advertise<visualization_msgs::Marker>("obstacle_markers", 10);
     
     // pre allocate the message to be published
     geometry_msgs::PoseStamped goal_msg;
