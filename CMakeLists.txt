@@ -35,7 +35,6 @@ catkin_package(
 #  CATKIN_DEPENDS moveit_msgs roscpp rospy std_msgs yaml-cpp
 #  DEPENDS system_lib
 )
-add_compile_options(-g)
 
 ###########
 ## Build ##
