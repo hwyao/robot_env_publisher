@@ -5,7 +5,9 @@
 
     <include file="$(find robot_env_publisher)/launch/file_env_node.launch" pass_all_args="true"/>
 
+    <rosparam param="use_sim_time">false</rosparam>
+
     <node pkg="rviz" type="rviz" output="screen" name="rviz" 
-        args="-d $(find robot_env_publisher)/launch/check_env_scene.rviz -f map --splash-screen $(find franka_visualization)/splash.png"
+        args="-d $(find robot_env_publisher)/launch/check_env_scene.rviz -f world --splash-screen $(find franka_visualization)/splash.png"
         required="true"/>
 </launch>

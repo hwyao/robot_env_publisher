@@ -1,15 +1,15 @@
 #include <ros/ros.h>
-#include <ros/package.h>
+#include <moveit_msgs/CollisionObject.h>
 #include <moveit_msgs/PlanningScene.h> 
-#include <geometry_msgs/Point.h>
-
-#include <string>
+#include <yaml-cpp/yaml.h>
+#include <geometry_msgs/Pose.h>
+#include <shape_msgs/SolidPrimitive.h>
+#include <fstream>
+#include <eigen3/Eigen/Geometry>
+#include "eigen3/Eigen/Dense"
+#include <ros/package.h>
 #include <vector>
 #include <cmath>
-
-#include <yaml-cpp/yaml.h>
-#include <Eigen/Dense>
-#include <Eigen/Geometry>
 
 // moveit_msgs/CollisionObject Message:
 // http://docs.ros.org/en/noetic/api/moveit_msgs/html/msg/CollisionObject.html

@@ -54,7 +54,7 @@ ObstaclePhraseFromYamlNode::ObstaclePhraseFromYamlNode(const YAML::Node& yaml_no
 }
 
 void ObstaclePhraseFromYamlNode::getObstacleStateCallback(moveit_msgs::CollisionObject& collision_object) {
-    collision_object.header.frame_id = "map";
+    collision_object.header.frame_id = "world";
     collision_object.id = name_;
     collision_object.operation = moveit_msgs::CollisionObject::ADD;
 

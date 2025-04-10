@@ -62,18 +62,18 @@ int main(int argc, char** argv) {
     }
 
     // Display the information of the loaded information
-    ROS_INFO_STREAM("Loaded goal position: [" 
+    ROS_INFO_STREAM("dynamic_obstacle_publisher: Loaded goal position: [" 
                     << goal_position[0] << ", " 
                     << goal_position[1] << ", " 
                     << goal_position[2] << "]");
-    ROS_INFO_STREAM("Loaded goal orientation (quaternion): [" 
+    ROS_INFO_STREAM("dynamic_obstacle_publisher: Loaded goal orientation (quaternion): [" 
                     << goal_rotation[0] << ", " 
                     << goal_rotation[1] << ", " 
                     << goal_rotation[2] << ", " 
                     << goal_rotation[3] << "]");
 
     // Display the information of the loaded obstacles
-    ROS_INFO_STREAM("Number of obstacles loaded: " << obstacles.size());
+    ROS_INFO_STREAM("dynamic_obstacle_publisher: Number of obstacles loaded: " << obstacles.size());
     for (size_t i = 0; i < obstacles.size(); ++i) {
         ROS_INFO_STREAM("Obstacle " << i + 1 << ":");
         ROS_INFO_STREAM("  Name: " << obstacles[i]->getName());
@@ -97,7 +97,7 @@ int main(int argc, char** argv) {
     
     // pre allocate the message to be published
     geometry_msgs::PoseStamped goal_msg;
-    goal_msg.header.frame_id = "map";
+    goal_msg.header.frame_id = "world";
     goal_msg.pose.position.x = goal_position[0];
     goal_msg.pose.position.y = goal_position[1];
     goal_msg.pose.position.z = goal_position[2];
