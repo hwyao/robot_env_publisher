@@ -1,1189 +1,205 @@
 obstacles:
-- angular_speed: 0.1
+- angular_speed: 0.0
   is_dynamic: false
   name: VerticalWall_Ball_0_0
   position:
-  - 0.1
-  - 0.2
+  - 0.2899999999999999
+  - -0.15
   - 0.08
   radius: 0.04
   velocity:
   - 0.0
-  - 0.1
   - 0.0
-- angular_speed: 0.1
+  - 0.0
+- angular_speed: 0.0
   is_dynamic: false
   name: VerticalWall_Ball_0_1
   position:
-  - 0.1
-  - 0.2
+  - 0.2899999999999999
+  - -0.15
   - 0.16
   radius: 0.04
   velocity:
   - 0.0
-  - 0.1
   - 0.0
-- angular_speed: 0.1
+  - 0.0
+- angular_speed: 0.0
   is_dynamic: false
   name: VerticalWall_Ball_0_2
   position:
-  - 0.1
-  - 0.2
+  - 0.2899999999999999
+  - -0.15
   - 0.24
   radius: 0.04
   velocity:
   - 0.0
-  - 0.1
   - 0.0
-- angular_speed: 0.1
+  - 0.0
+- angular_speed: 0.0
   is_dynamic: false
   name: VerticalWall_Ball_0_3
   position:
-  - 0.1
-  - 0.2
+  - 0.2899999999999999
+  - -0.15
   - 0.32
   radius: 0.04
   velocity:
   - 0.0
-  - 0.1
   - 0.0
-- angular_speed: 0.1
+  - 0.0
+- angular_speed: 0.0
   is_dynamic: false
   name: VerticalWall_Ball_0_4
   position:
-  - 0.1
-  - 0.2
+  - 0.2899999999999999
+  - -0.15
   - 0.4
   radius: 0.04
   velocity:
   - 0.0
-  - 0.1
   - 0.0
-- angular_speed: 0.1
+  - 0.0
+- angular_speed: 0.0
   is_dynamic: false
   name: VerticalWall_Ball_0_5
   position:
-  - 0.1
-  - 0.2
+  - 0.2899999999999999
+  - -0.15
   - 0.48000000000000004
   radius: 0.04
   velocity:
   - 0.0
-  - 0.1
   - 0.0
-- angular_speed: 0.1
+  - 0.0
+- angular_speed: 0.0
   is_dynamic: false
   name: VerticalWall_Ball_0_6
   position:
-  - 0.1
-  - 0.2
+  - 0.2899999999999999
+  - -0.15
   - 0.5599999999999999
   radius: 0.04
   velocity:
   - 0.0
-  - 0.1
   - 0.0
-- angular_speed: 0.1
+  - 0.0
+- angular_speed: 0.0
   is_dynamic: false
-  name: VerticalWall_Ball_0_7
+  name: TopWall_Ball_0_0
   position:
-  - 0.1
-  - 0.2
+  - 0.44999999999999996
+  - -0.15
   - 0.64
   radius: 0.04
   velocity:
   - 0.0
-  - 0.1
   - 0.0
-- angular_speed: 0.1
+  - 0.0
+- angular_speed: 0.0
   is_dynamic: false
-  name: VerticalWall_Ball_0_8
+  name: TopWall_Ball_0_1
   position:
-  - 0.1
-  - 0.2
-  - 0.72
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_0_9
-  position:
-  - 0.1
-  - 0.2
-  - 0.7999999999999999
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_0_10
-  position:
-  - 0.1
-  - 0.2
-  - 0.88
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_1_0
-  position:
-  - 0.18
-  - 0.2
-  - 0.08
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_1_1
-  position:
-  - 0.18
-  - 0.2
-  - 0.16
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_1_2
-  position:
-  - 0.18
-  - 0.2
-  - 0.24
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_1_3
-  position:
-  - 0.18
-  - 0.2
-  - 0.32
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_1_4
-  position:
-  - 0.18
-  - 0.2
-  - 0.4
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_1_5
-  position:
-  - 0.18
-  - 0.2
-  - 0.48000000000000004
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_1_6
-  position:
-  - 0.18
-  - 0.2
-  - 0.5599999999999999
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_1_7
-  position:
-  - 0.18
-  - 0.2
+  - 0.36999999999999994
+  - -0.15
   - 0.64
   radius: 0.04
   velocity:
   - 0.0
-  - 0.1
   - 0.0
-- angular_speed: 0.1
+  - 0.0
+- angular_speed: 0.0
   is_dynamic: false
-  name: VerticalWall_Ball_1_8
+  name: TopWall_Ball_0_2
   position:
-  - 0.18
-  - 0.2
-  - 0.72
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_1_9
-  position:
-  - 0.18
-  - 0.2
-  - 0.7999999999999999
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_1_10
-  position:
-  - 0.18
-  - 0.2
-  - 0.88
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_2_0
-  position:
-  - 0.26
-  - 0.2
-  - 0.08
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_2_1
-  position:
-  - 0.26
-  - 0.2
-  - 0.16
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_2_2
-  position:
-  - 0.26
-  - 0.2
-  - 0.24
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_2_3
-  position:
-  - 0.26
-  - 0.2
-  - 0.32
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_2_4
-  position:
-  - 0.26
-  - 0.2
-  - 0.4
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_2_5
-  position:
-  - 0.26
-  - 0.2
-  - 0.48000000000000004
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_2_6
-  position:
-  - 0.26
-  - 0.2
-  - 0.5599999999999999
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_2_7
-  position:
-  - 0.26
-  - 0.2
+  - 0.2899999999999999
+  - -0.15
   - 0.64
   radius: 0.04
   velocity:
   - 0.0
-  - 0.1
   - 0.0
-- angular_speed: 0.1
+  - 0.0
+- angular_speed: 0.0
   is_dynamic: false
-  name: VerticalWall_Ball_2_8
+  name: TopWall_Ball_0_3
   position:
-  - 0.26
-  - 0.2
-  - 0.72
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_2_9
-  position:
-  - 0.26
-  - 0.2
-  - 0.7999999999999999
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_2_10
-  position:
-  - 0.26
-  - 0.2
-  - 0.88
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_3_0
-  position:
-  - 0.33999999999999997
-  - 0.2
-  - 0.08
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_3_1
-  position:
-  - 0.33999999999999997
-  - 0.2
-  - 0.16
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_3_2
-  position:
-  - 0.33999999999999997
-  - 0.2
-  - 0.24
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_3_3
-  position:
-  - 0.33999999999999997
-  - 0.2
-  - 0.32
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_3_4
-  position:
-  - 0.33999999999999997
-  - 0.2
-  - 0.4
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_3_5
-  position:
-  - 0.33999999999999997
-  - 0.2
-  - 0.48000000000000004
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_3_6
-  position:
-  - 0.33999999999999997
-  - 0.2
-  - 0.5599999999999999
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_3_7
-  position:
-  - 0.33999999999999997
-  - 0.2
+  - 0.20999999999999996
+  - -0.15
   - 0.64
   radius: 0.04
   velocity:
   - 0.0
-  - 0.1
   - 0.0
-- angular_speed: 0.1
+  - 0.0
+- angular_speed: 0.0
   is_dynamic: false
-  name: VerticalWall_Ball_3_8
+  name: TopWall_Ball_0_4
   position:
-  - 0.33999999999999997
-  - 0.2
-  - 0.72
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_3_9
-  position:
-  - 0.33999999999999997
-  - 0.2
-  - 0.7999999999999999
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_3_10
-  position:
-  - 0.33999999999999997
-  - 0.2
-  - 0.88
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_4_0
-  position:
-  - 0.42000000000000004
-  - 0.2
-  - 0.08
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_4_1
-  position:
-  - 0.42000000000000004
-  - 0.2
-  - 0.16
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_4_2
-  position:
-  - 0.42000000000000004
-  - 0.2
-  - 0.24
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_4_3
-  position:
-  - 0.42000000000000004
-  - 0.2
-  - 0.32
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_4_4
-  position:
-  - 0.42000000000000004
-  - 0.2
-  - 0.4
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_4_5
-  position:
-  - 0.42000000000000004
-  - 0.2
-  - 0.48000000000000004
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_4_6
-  position:
-  - 0.42000000000000004
-  - 0.2
-  - 0.5599999999999999
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_4_7
-  position:
-  - 0.42000000000000004
-  - 0.2
+  - 0.12999999999999995
+  - -0.15
   - 0.64
   radius: 0.04
   velocity:
   - 0.0
-  - 0.1
   - 0.0
-- angular_speed: 0.1
+  - 0.0
+- angular_speed: 0.0
   is_dynamic: false
-  name: VerticalWall_Ball_4_8
+  name: BottomWall_Ball_0_0
   position:
-  - 0.42000000000000004
-  - 0.2
-  - 0.72
+  - 0.44999999999999996
+  - -0.15
+  - 0
   radius: 0.04
   velocity:
   - 0.0
-  - 0.1
   - 0.0
-- angular_speed: 0.1
+  - 0.0
+- angular_speed: 0.0
   is_dynamic: false
-  name: VerticalWall_Ball_4_9
+  name: BottomWall_Ball_0_1
   position:
-  - 0.42000000000000004
-  - 0.2
-  - 0.7999999999999999
+  - 0.36999999999999994
+  - -0.15
+  - 0
   radius: 0.04
   velocity:
   - 0.0
-  - 0.1
   - 0.0
-- angular_speed: 0.1
+  - 0.0
+- angular_speed: 0.0
   is_dynamic: false
-  name: VerticalWall_Ball_4_10
+  name: BottomWall_Ball_0_2
   position:
-  - 0.42000000000000004
-  - 0.2
-  - 0.88
+  - 0.2899999999999999
+  - -0.15
+  - 0
   radius: 0.04
   velocity:
   - 0.0
-  - 0.1
   - 0.0
-- angular_speed: 0.1
+  - 0.0
+- angular_speed: 0.0
   is_dynamic: false
-  name: VerticalWall_Ball_5_0
+  name: BottomWall_Ball_0_3
   position:
-  - 0.5
-  - 0.2
-  - 0.08
+  - 0.20999999999999996
+  - -0.15
+  - 0
   radius: 0.04
   velocity:
   - 0.0
-  - 0.1
   - 0.0
-- angular_speed: 0.1
+  - 0.0
+- angular_speed: 0.0
   is_dynamic: false
-  name: VerticalWall_Ball_5_1
+  name: BottomWall_Ball_0_4
   position:
-  - 0.5
-  - 0.2
-  - 0.16
+  - 0.12999999999999995
+  - -0.15
+  - 0
   radius: 0.04
   velocity:
   - 0.0
-  - 0.1
   - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_5_2
-  position:
-  - 0.5
-  - 0.2
-  - 0.24
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_5_3
-  position:
-  - 0.5
-  - 0.2
-  - 0.32
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_5_4
-  position:
-  - 0.5
-  - 0.2
-  - 0.4
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_5_5
-  position:
-  - 0.5
-  - 0.2
-  - 0.48000000000000004
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_5_6
-  position:
-  - 0.5
-  - 0.2
-  - 0.5599999999999999
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_5_7
-  position:
-  - 0.5
-  - 0.2
-  - 0.64
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_5_8
-  position:
-  - 0.5
-  - 0.2
-  - 0.72
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_5_9
-  position:
-  - 0.5
-  - 0.2
-  - 0.7999999999999999
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_5_10
-  position:
-  - 0.5
-  - 0.2
-  - 0.88
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_6_0
-  position:
-  - 0.58
-  - 0.2
-  - 0.08
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_6_1
-  position:
-  - 0.58
-  - 0.2
-  - 0.16
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_6_2
-  position:
-  - 0.58
-  - 0.2
-  - 0.24
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_6_3
-  position:
-  - 0.58
-  - 0.2
-  - 0.32
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_6_4
-  position:
-  - 0.58
-  - 0.2
-  - 0.4
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_6_5
-  position:
-  - 0.58
-  - 0.2
-  - 0.48000000000000004
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_6_6
-  position:
-  - 0.58
-  - 0.2
-  - 0.5599999999999999
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_6_7
-  position:
-  - 0.58
-  - 0.2
-  - 0.64
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_6_8
-  position:
-  - 0.58
-  - 0.2
-  - 0.72
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_6_9
-  position:
-  - 0.58
-  - 0.2
-  - 0.7999999999999999
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_6_10
-  position:
-  - 0.58
-  - 0.2
-  - 0.88
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_7_0
-  position:
-  - 0.66
-  - 0.2
-  - 0.08
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_7_1
-  position:
-  - 0.66
-  - 0.2
-  - 0.16
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_7_2
-  position:
-  - 0.66
-  - 0.2
-  - 0.24
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_7_3
-  position:
-  - 0.66
-  - 0.2
-  - 0.32
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_7_4
-  position:
-  - 0.66
-  - 0.2
-  - 0.4
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_7_5
-  position:
-  - 0.66
-  - 0.2
-  - 0.48000000000000004
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_7_6
-  position:
-  - 0.66
-  - 0.2
-  - 0.5599999999999999
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_7_7
-  position:
-  - 0.66
-  - 0.2
-  - 0.64
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_7_8
-  position:
-  - 0.66
-  - 0.2
-  - 0.72
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_7_9
-  position:
-  - 0.66
-  - 0.2
-  - 0.7999999999999999
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_7_10
-  position:
-  - 0.66
-  - 0.2
-  - 0.88
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_8_0
-  position:
-  - 0.74
-  - 0.2
-  - 0.08
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_8_1
-  position:
-  - 0.74
-  - 0.2
-  - 0.16
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_8_2
-  position:
-  - 0.74
-  - 0.2
-  - 0.24
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_8_3
-  position:
-  - 0.74
-  - 0.2
-  - 0.32
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_8_4
-  position:
-  - 0.74
-  - 0.2
-  - 0.4
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_8_5
-  position:
-  - 0.74
-  - 0.2
-  - 0.48000000000000004
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_8_6
-  position:
-  - 0.74
-  - 0.2
-  - 0.5599999999999999
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_8_7
-  position:
-  - 0.74
-  - 0.2
-  - 0.64
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_8_8
-  position:
-  - 0.74
-  - 0.2
-  - 0.72
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_8_9
-  position:
-  - 0.74
-  - 0.2
-  - 0.7999999999999999
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
-  - 0.0
-- angular_speed: 0.1
-  is_dynamic: false
-  name: VerticalWall_Ball_8_10
-  position:
-  - 0.74
-  - 0.2
-  - 0.88
-  radius: 0.04
-  velocity:
-  - 0.0
-  - 0.1
   - 0.0

@@ -30,8 +30,8 @@ radius = 0.04  # sphere radius
 output = {
     "initial_configuration": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
     "goal": {
-        "position": [0.5, 0.5, 0.5],
-        "orientation": [0.0, 0.0, 0.0, 1.0]
+        "position": [0.25, 0, 0.45],
+        "orientation": [1.0, 0.0, 0.0, 0.0]
     },
     "obstacles": []
 }
@@ -71,8 +71,8 @@ elif flag == 1:  # wall along x-axis
 # --------------------------------------------------------------------
 elif flag == 2:  # wall with hole
     for i in range(3):
-        for j in range(4):
-            if (1 <= i < 2 and 2 <= j < 4) or j in [0, 3]:
+        for j in range(5):
+            if (1 <= i < 2 and 2 <= j < 3) or j in [0, 4]:
                 continue
             pos = [0.5, -0.16 + 2.5 * i * 2 * radius, 2 * j * 2.5 * radius]
             vel = [0.0, 0.0, 0.0]
@@ -84,12 +84,12 @@ elif flag == 3:  # letter I wall
     for i in range(1):
         for j in range(7):
             pos = [-0.55 + 0.84 - i * 2 * radius, -0.15, j * 2 * radius + 0.08]
-            vel = [0.0, 0.5, 0.5]
+            vel = [0.0, 0., 0.0]
             output["obstacles"].append(make_obstacle(f"VerticalWall_Ball_{i}_{j}", pos, vel))
     for j in range(5):
         pos_top = [-0.55 + 1 - j * 2 * radius, -0.15, 0.64]
         pos_bot = [-0.55 + 1 - j * 2 * radius, -0.15, 0]
-        vel = [0.0, 0.5, 0.5]
+        vel = [0.0, 0.0, 0.0]
         output["obstacles"].append(make_obstacle(f"TopWall_Ball_{0}_{j}", pos_top, vel))
         output["obstacles"].append(make_obstacle(f"BottomWall_Ball_{0}_{j}", pos_bot, vel))
 
@@ -123,7 +123,7 @@ elif flag == 6:  # selected z-positions
         for j in range(20):
             if j in [5, 9]:
                 pos = [0.15, -0.32 + i * 2 * radius + 0.16, j * 2 * radius + 0.08]
-                vel = [0.0, 0.0, 0.8]
+                vel = [0.0, 0.0, 0.05]
                 output["obstacles"].append(make_obstacle(f"VerticalWall_Ball_{i}_{j}", pos, vel))
 
 # -------------------- Output YAML --------------------

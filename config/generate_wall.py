@@ -52,56 +52,75 @@ if flag == 1: #  Simple wall (parallel to x-axis)
                 "angular_speed": 0.1
             })
 #---------------------------------------------------------------------------
+# elif flag == 2: # Wall with Hole
+#     for i in range(5):  # y
+#         for j in range(11):  # z
+#             # hole
+#             if 2 <= i < 7 and 3 <= j < 7:
+#                 continue
+#             obstacles.append({
+#                 "name": f"VerticalWall_Ball_{i}_{j}",
+#                 "position": [0.5, -0.32+i * 2 * radius,j * 2 * radius + 0.08],
+#                 "velocity": [0.0, 0.0, 0.0],
+#                 "radius": radius,
+#                 "is_dynamic": False,
+#                 "angular_speed": 0.1
+#             })
 elif flag == 2: # Wall with Hole
-    for i in range(9):  # y
-        for j in range(11):  # z
+    for i in range(3):  # y
+        for j in range(4):  # z
             # hole
-            if 2 <= i < 7 and 3 <= j < 7:
+            if 1 <= i < 2 and 2 <= j < 4:
+                continue
+            if j == 0:
+                continue
+            if j == 3:
                 continue
             obstacles.append({
                 "name": f"VerticalWall_Ball_{i}_{j}",
-                "position": [0.5, -0.32+i * 2 * radius,j * 2 * radius + 0.08],
+                "position": [0.5, -0.16+2.5*i * 2 * radius,2*j * 2.5 * radius],
                 "velocity": [0.0, 0.0, 0.0],
-                "radius": radius,
+                "radius": 0.08,
                 "is_dynamic": False,
                 "angular_speed": 0.1
             })
 #---------------------------------------------------------------------------
 elif flag == 3: # Wall belike letter "I"
-    for i in range(5):  # y
+    for i in range(1):  # y
         for j in range(7):  # z
             obstacles.append({
                 "name": f"VerticalWall_Ball_{i}_{j}",
-                "position": [1+-i * 2 * radius, 0, j * 2 * radius + 0.08],  # x = -y, y = x
+                "position": [-0.55+0.84+-i * 2 * radius, -0.15, j * 2 * radius + 0.08],  # x = -y, y = x
                 "velocity": [0.0, 0.0, 0.0],
                 "radius": radius,
                 "is_dynamic": False,
-                "angular_speed": 0.1
+                "angular_speed": 0.0
             })
-    for i in range(4):  # x
+    for i in range(1):  # x
         for j in range(5):  # y
             obstacles.append({
                 "name": f"TopWall_Ball_{i}_{j}",
-                "position": [1+-j * 2 * radius, -0.12 + i * 2 * radius, 0.64],  # x = -y, y = x
+                "position": [-0.55+1+-j * 2 * radius, -0.15 + i * 2 * radius, 0.64],  # x = -y, y = x
                 "velocity": [0.0, 0.0, 0.0],
                 "radius": radius,
                 "is_dynamic": False,
-                "angular_speed": 0.1
+                "angular_speed": 0.0
             })
-    for i in range(4):  # x
+    for i in range(1):  # x
         for j in range(5):  # y
             obstacles.append({
                 "name": f"BottomWall_Ball_{i}_{j}",
-                "position": [1-j * 2 * radius, -0.12 + i * 2 * radius, 0],  # x = -y, y = x
+                "position": [-0.55+1-j * 2 * radius, -0.15 + i * 2 * radius, 0],  # x = -y, y = x
                 "velocity": [0.0, 0.0, 0.0],
                 "radius": radius,
                 "is_dynamic": False,
-                "angular_speed": 0.1
+                "angular_speed": 0.0
             })
 #---------------------------------------------------------------------------
 elif flag == 4: # Wall belike letter "T"
     for i in range(5):  # y
         for j in range(7):  # z
+
             obstacles.append({
                 "name": f"VerticalWall_Ball_{i}_{j}",
                 "position": [1+-i * 2 * radius, 0, j * 2 * radius + 0.08],  # x = -y, y = x
@@ -134,6 +153,22 @@ if flag == 5: #  Dynamics Simple wall  (parallel to y-axis)
                 "angular_speed": 0.1
             })            
 
+if flag == 6: #  Simple wall (parallel to x-axis)
+    # Vertical wall
+    for i in range(5):  # y
+        for j in range(20):  # z
+
+            if j == 5 or j == 9:
+                
+                obstacles.append({
+                "name": f"VerticalWall_Ball_{i}_{j}",
+                "position": [0.15, -0.32+i * 2 * radius+0.16,j * 2 * radius + 0.08],
+                "velocity": [0.0, 0.0, 0.8],
+                "radius": radius,
+                "is_dynamic": False,
+                "angular_speed": 0.1
+            })
+#-----------------------------------------
 output = {"obstacles": obstacles}
 with open("obstacles_T.yaml", "w") as file:
     yaml.dump(output, file, default_flow_style=False)
