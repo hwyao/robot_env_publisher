@@ -5,8 +5,6 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
-        - /Pose1
-        - /Marker1
       Splitter Ratio: 0.5
     Tree Height: 708
   - Class: rviz/Selection
@@ -68,12 +66,21 @@ Visualization Manager:
       Topic: /goal
       Unreliable: false
       Value: true
-    - Class: rviz/Marker
+    - Class: rviz/MarkerArray
       Enabled: true
       Marker Topic: /obstacle_markers
-      Name: Marker
+      Name: MarkerArray
       Namespaces:
-        {}
+        VerticalWall_Ball_0_5: true
+        VerticalWall_Ball_0_9: true
+        VerticalWall_Ball_1_5: true
+        VerticalWall_Ball_1_9: true
+        VerticalWall_Ball_2_5: true
+        VerticalWall_Ball_2_9: true
+        VerticalWall_Ball_3_5: true
+        VerticalWall_Ball_3_9: true
+        VerticalWall_Ball_4_5: true
+        VerticalWall_Ball_4_9: true
       Queue Size: 100
       Value: true
   Enabled: true
@@ -104,7 +111,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 3.4451262950897217
+      Distance: 5.190143585205078
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -120,9 +127,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.5003979802131653
+      Pitch: 0.49539798498153687
       Target Frame: <Fixed Frame>
-      Yaw: 5.948580265045166
+      Yaw: 6.01857852935791
     Saved: ~
 Window Geometry:
   Displays:

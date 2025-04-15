@@ -8,7 +8,7 @@
 #include <ros/package.h>
 #include <moveit_msgs/PlanningScene.h>
 #include <geometry_msgs/PoseStamped.h>
-#include <visualization_msgs/Marker.h>
+#include <visualization_msgs/MarkerArray.h>
 
 int main(int argc, char** argv) {
     std::string node_name = "dynamic_obstacle_publisher";
@@ -93,7 +93,7 @@ int main(int argc, char** argv) {
     // set up the publishers
     ros::Publisher goal_pub = nh.advertise<geometry_msgs::PoseStamped>("goal", 1);
     ros::Publisher obstacle_pub = nh.advertise<moveit_msgs::PlanningScene>("planning_scene", 1);
-    ros::Publisher obstacle_vis_pub = nh.advertise<visualization_msgs::Marker>("obstacle_markers", 10);
+    ros::Publisher obstacle_vis_pub = nh.advertise<visualization_msgs::MarkerArray>("obstacle_markers", 10);
     
     // pre allocate the message to be published
     geometry_msgs::PoseStamped goal_msg;
@@ -124,18 +124,22 @@ int main(int argc, char** argv) {
             moveit_msgs::CollisionObject collision_obj;
             obstacles[i]->getObstacleStateCallback(collision_obj);
             planning_scene_msg.world.collision_objects.push_back(collision_obj);
+        }
 
-            // Prepare the visualization marker
-            if (enable_marker_visualization){
+        obstacle_pub.publish(planning_scene_msg);
+
+        if (enable_marker_visualization) {
+            visualization_msgs::MarkerArray obstacle_vis_markers;
+            for (size_t i = 0; i < obstacles.size(); ++i) {
                 visualization_msgs::Marker obstacle_vis_marker;
-                obstacle_vis_marker.header.frame_id = collision_obj.header.frame_id;
+                obstacle_vis_marker.header.frame_id = planning_scene_msg.world.collision_objects[i].header.frame_id;
                 obstacle_vis_marker.header.stamp = ros::Time::now();
-                obstacle_vis_marker.ns = collision_obj.id;
+                obstacle_vis_marker.ns = planning_scene_msg.world.collision_objects[i].id;
                 obstacle_vis_marker.id = static_cast<int>(i);
 
                 // Check if there is exactly one primitive
-                if (collision_obj.primitives.size() == 1) {
-                    const auto& primitive = collision_obj.primitives[0];
+                if (planning_scene_msg.world.collision_objects[i].primitives.size() == 1) {
+                    const auto& primitive = planning_scene_msg.world.collision_objects[i].primitives[0];
                     switch (primitive.type) {
                         case shape_msgs::SolidPrimitive::BOX:
                             obstacle_vis_marker.type = visualization_msgs::Marker::CUBE;
@@ -165,7 +169,7 @@ int main(int argc, char** argv) {
                     }
 
                     // Set position and orientation
-                    obstacle_vis_marker.pose = collision_obj.primitive_poses[0];
+                    obstacle_vis_marker.pose = planning_scene_msg.world.collision_objects[i].primitive_poses[0];
 
                     // Set color
                     obstacle_vis_marker.color.r = 0.0;
@@ -173,15 +177,15 @@ int main(int argc, char** argv) {
                     obstacle_vis_marker.color.b = 1.0;
                     obstacle_vis_marker.color.a = 0.6; 
 
-                    obstacle_vis_pub.publish(obstacle_vis_marker);
+                    obstacle_vis_markers.markers.push_back(obstacle_vis_marker);
                 } else {
                     ROS_WARN_THROTTLE(1.0, "Collision object must have exactly one primitive to be visualized.");
                 }
             }
-        }
-        obstacle_pub.publish(planning_scene_msg);
-        
 
+            obstacle_vis_pub.publish(obstacle_vis_markers);
+        }
+        
         ros::spinOnce();
         rate.sleep();
     }
