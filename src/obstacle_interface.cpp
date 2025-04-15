@@ -10,7 +10,7 @@
 namespace robot_env_publisher {
 
 ObstaclePhraseFromYamlNode::ObstaclePhraseFromYamlNode(const YAML::Node& yaml_node, int frequency)
-    : frequency_(frequency) {
+    : frequency_(frequency), time_(0.0), transform_initial_(Eigen::Matrix4d::Identity()), transform_now_(Eigen::Matrix4d::Identity()) {
     
     // Check if the YAML node is a map
     if (!yaml_node.IsMap()) {

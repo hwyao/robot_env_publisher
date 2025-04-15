@@ -86,7 +86,7 @@ protected:
 private:
     // data phrased from YAML node
     std::string name_;
-    Eigen::Matrix4d transform_initial_ = Eigen::Matrix4d::Identity();
+    Eigen::Matrix4d transform_initial_;
     Eigen::Vector3d velocity_w_;
     Eigen::Vector3d velocity_v_;
     bool use_velocity_as_twist_;
@@ -94,7 +94,7 @@ private:
     std::vector<double> primitiveDimension; 
 
     // state data
-    Eigen::Matrix4d transform_now_     = Eigen::Matrix4d::Identity();
+    Eigen::Matrix4d transform_now_;
 
     int frequency_;   // The frequency of the obstacle update
     double time_;     // The time of the obstacle update
