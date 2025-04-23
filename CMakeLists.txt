@@ -77,11 +77,6 @@ target_compile_features(robot_env_publisher PUBLIC
 )
 
 ## Declare C++ executables
-add_executable(obstacle_publisher src/obstacle_publisher.cpp)
-target_link_libraries(obstacle_publisher PRIVATE
-  robot_env_publisher
-)
-
 add_executable(file_env_node src/file_env_node.cpp)
 target_link_libraries(file_env_node PRIVATE
   robot_env_publisher

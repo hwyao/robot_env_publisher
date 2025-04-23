@@ -1,7 +1,0 @@
-obstacles:
-  - name: "Obstacle1"
-    position: [0.25, 0.5, 100]
-    velocity: [0.0, 0.0, 0.0]
-    radius: 0.05
-    is_dynamic: true
-    angular_speed: 0.2
