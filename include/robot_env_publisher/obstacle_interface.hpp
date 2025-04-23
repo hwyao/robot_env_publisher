@@ -23,8 +23,16 @@ public:
      * @param collision_object The reference to the CollisionObject message. For each of the different
      * data source that implement this interface, the data source should fill in this data (to be injected into the
      * planning scene).
+     * @param clock The current time used for updating the obstacle state. Defaults to 0.
      */
-    virtual void getObstacleStateCallback(moveit_msgs::CollisionObject& collision_object) = 0;
+    virtual void getObstacleStateCallback(moveit_msgs::CollisionObject& collision_object, double clock = 0) = 0;
+
+    /**
+     * @brief Generate a report of the obstacle information.
+     * 
+     * @param report A reference to a string where the obstacle information will be stored.
+     */
+    virtual void obstacleInfoReport(std::string& report) const = 0;
 };
 
 class ObstaclePhraseFromYamlNode : public ObstacleInterface {
@@ -37,7 +45,7 @@ public:
      * @param frequency The frequency of the obstacle. This is used to drive the obstacle move continuously when
      * calling the getObstacleStateCallback function.
      */
-    ObstaclePhraseFromYamlNode(const YAML::Node& yaml_node, int frequency);
+    ObstaclePhraseFromYamlNode(const YAML::Node& yaml_node);
 
     /**
      * @brief Destroy the Obstacle Phrase From Yaml Node object
@@ -51,29 +59,16 @@ public:
      * @param collision_object The reference to the CollisionObject message. For each of the different
      * data source that implement this interface, the data source should fill in this data (to be injected into the
      * planning scene).
+     * @param clock The current time used for updating the obstacle state. Defaults to 0.
      */
-    void getObstacleStateCallback(moveit_msgs::CollisionObject& collision_object) override;
+    void getObstacleStateCallback(moveit_msgs::CollisionObject& collision_object, double clock = 0) override;
 
     /**
-     * @brief Get the name of the obstacle
+     * @brief Generate a report of the obstacle information.
      * 
-     * @return The name of the obstacle
+     * @param report A reference to a string where the obstacle information will be stored.
      */
-    const std::string& getName() const { return name_; }
-
-    /**
-     * @brief Get the primitive type of the obstacle
-     * 
-     * @return The primitive type of the obstacle
-     */
-    const std::string& getPrimitiveType() const { return primitiveType; }
-
-    /**
-     * @brief Get the primitive dimensions of the obstacle
-     * 
-     * @return The primitive dimensions of the obstacle
-     */
-    const std::vector<double>& getPrimitiveDimension() const { return primitiveDimension; }
+    void obstacleInfoReport(std::string& report) const override;
 
 protected:
     /**
@@ -95,8 +90,6 @@ private:
 
     // state data
     Eigen::Matrix4d transform_now_;
-
-    int frequency_;   // The frequency of the obstacle update
     double time_;     // The time of the obstacle update
 };
 

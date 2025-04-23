@@ -5,7 +5,9 @@
 
     <rosparam param="use_sim_time">true</rosparam>
 
-    <node pkg="robot_env_publisher" type="publish_clock.py" name="publish_clock" output="screen"/>
+    <node pkg="robot_env_publisher" type="publish_clock_slidebar.py" name="publish_clock" output="screen"/>
+
+    <node name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure" required="false"/>        
 
     <include file="$(find robot_env_publisher)/launch/file_env_node.launch" pass_all_args="true"/>
 

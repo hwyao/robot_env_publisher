@@ -9,6 +9,17 @@
 #include <moveit_msgs/PlanningScene.h>
 #include <geometry_msgs/PoseStamped.h>
 #include <visualization_msgs/MarkerArray.h>
+#include <rosgraph_msgs/Clock.h>
+
+// Global variable to store the latest clock time
+double latest_clock_time = 0.0;
+bool latest_clock_time_first_received = false;
+
+// Callback function for the /clock topic
+void clockCallback(const rosgraph_msgs::Clock::ConstPtr& msg) {
+    latest_clock_time = msg->clock.toSec(); // Parse the time as a double
+    if (!latest_clock_time_first_received) { latest_clock_time_first_received = true; } 
+}
 
 int main(int argc, char** argv) {
     std::string node_name = "dynamic_obstacle_publisher";
@@ -26,7 +37,7 @@ int main(int argc, char** argv) {
     // Load the YAML file and parse the obstacles
     Eigen::Vector3d goal_position;
     Eigen::Vector4d goal_rotation;
-    std::vector<std::unique_ptr<robot_env_publisher::ObstaclePhraseFromYamlNode>> obstacles;
+    std::vector<std::unique_ptr<robot_env_publisher::ObstacleInterface>> obstacles;
     
     // Check if the YAML file exists
     std::string package_path = ros::package::getPath("robot_env_publisher");
@@ -56,7 +67,7 @@ int main(int argc, char** argv) {
     YAMLPhraseWithAssert(env_yaml, "obstacles", obstacles_yaml);
     if (obstacles_yaml.IsSequence()) {
         for (const auto& obstacle_yaml : obstacles_yaml) {
-            robot_env_publisher::ObstaclePhraseFromYamlNode obstacle(obstacle_yaml, 10);
+            robot_env_publisher::ObstaclePhraseFromYamlNode obstacle(obstacle_yaml);
             obstacles.push_back(std::make_unique<robot_env_publisher::ObstaclePhraseFromYamlNode>(obstacle));
         }
     }
@@ -75,25 +86,18 @@ int main(int argc, char** argv) {
     // Display the information of the loaded obstacles
     ROS_INFO_STREAM("dynamic_obstacle_publisher: Number of obstacles loaded: " << obstacles.size());
     for (size_t i = 0; i < obstacles.size(); ++i) {
-        ROS_INFO_STREAM("Obstacle " << i + 1 << ":");
-        ROS_INFO_STREAM("  Name: " << obstacles[i]->getName());
-        ROS_INFO_STREAM("  Primitive Type: " << obstacles[i]->getPrimitiveType());
-
-        const auto& dimensions = obstacles[i]->getPrimitiveDimension();
-        if (dimensions.size() > 3) {
-            ROS_WARN_STREAM("Obstacle " << i + 1 << " has more than 3 dimensions. Only the first 3 will be displayed.");
-        }
-
-        ROS_INFO_STREAM("  Primitive Dimensions: ["
-                        << (dimensions.size() > 0 ? std::to_string(dimensions[0]) : "N/A") << ", "
-                        << (dimensions.size() > 1 ? std::to_string(dimensions[1]) : "N/A") << ", "
-                        << (dimensions.size() > 2 ? std::to_string(dimensions[2]) : "N/A") << "]");
+        std::string report;
+        obstacles[i]->obstacleInfoReport(report);
+        ROS_INFO_STREAM("Obstacle " << i + 1 << ":\n" << report);
     }
 
     // set up the publishers
     ros::Publisher goal_pub = nh.advertise<geometry_msgs::PoseStamped>("goal", 1);
     ros::Publisher obstacle_pub = nh.advertise<moveit_msgs::PlanningScene>("planning_scene", 1);
     ros::Publisher obstacle_vis_pub = nh.advertise<visualization_msgs::MarkerArray>("obstacle_markers", 10);
+
+    // Subscribe to the /clock topic
+    ros::Subscriber clock_sub = nh.subscribe("/clock", 1, clockCallback);
     
     // pre allocate the message to be published
     geometry_msgs::PoseStamped goal_msg;
@@ -122,10 +126,9 @@ int main(int argc, char** argv) {
         {
             // prepare the planning scene message
             moveit_msgs::CollisionObject collision_obj;
-            obstacles[i]->getObstacleStateCallback(collision_obj);
+            obstacles[i]->getObstacleStateCallback(collision_obj, latest_clock_time);
             planning_scene_msg.world.collision_objects.push_back(collision_obj);
         }
-
         obstacle_pub.publish(planning_scene_msg);
 
         if (enable_marker_visualization) {
@@ -186,6 +189,18 @@ int main(int argc, char** argv) {
             obstacle_vis_pub.publish(obstacle_vis_markers);
         }
         
+        // check: if the latest clock time is constantly 0.0, send warning each 1 second
+        {
+            static double latest_clock_time_last = -1.0;
+            if (latest_clock_time_first_received == false) {
+                ROS_WARN_THROTTLE(1.0, "The latest clock time is not received yet. Please check the /clock topic.");
+            }
+            else if (latest_clock_time == 0.0 && latest_clock_time_last == 0.0) {
+                ROS_WARN_THROTTLE(1.0, "The latest clock time is received but constantly 0.0. Please check the /clock topic.");
+            }
+            latest_clock_time_last = latest_clock_time;
+        }
+
         ros::spinOnce();
         rate.sleep();
     }

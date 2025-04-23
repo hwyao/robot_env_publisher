@@ -6,11 +6,12 @@
 #include <string>
 #include <iostream>
 #include <stdexcept>
+#include <sstream>
 
 namespace robot_env_publisher {
 
-ObstaclePhraseFromYamlNode::ObstaclePhraseFromYamlNode(const YAML::Node& yaml_node, int frequency)
-    : frequency_(frequency), time_(0.0), transform_initial_(Eigen::Matrix4d::Identity()), transform_now_(Eigen::Matrix4d::Identity()) {
+ObstaclePhraseFromYamlNode::ObstaclePhraseFromYamlNode(const YAML::Node& yaml_node)
+    : time_(0.0), transform_initial_(Eigen::Matrix4d::Identity()), transform_now_(Eigen::Matrix4d::Identity()) {
     
     // Check if the YAML node is a map
     if (!yaml_node.IsMap()) {
@@ -53,7 +54,12 @@ ObstaclePhraseFromYamlNode::ObstaclePhraseFromYamlNode(const YAML::Node& yaml_no
     }
 }
 
-void ObstaclePhraseFromYamlNode::getObstacleStateCallback(moveit_msgs::CollisionObject& collision_object) {
+void ObstaclePhraseFromYamlNode::getObstacleStateCallback(moveit_msgs::CollisionObject& collision_object, double clock /* = 0 */) {
+    // Update position using the provided clock value
+    time_ = clock;
+    updatePosition();
+    
+    // Fill in the collision object with the updated position and primitive
     collision_object.header.frame_id = "world";
     collision_object.id = name_;
     collision_object.operation = moveit_msgs::CollisionObject::ADD;
@@ -90,8 +96,6 @@ void ObstaclePhraseFromYamlNode::getObstacleStateCallback(moveit_msgs::Collision
     primitive.dimensions = primitiveDimension;
 
     collision_object.primitives.push_back(primitive);
-
-    updatePosition();
 }
 
 void ObstaclePhraseFromYamlNode::updatePosition() {
@@ -113,7 +117,29 @@ void ObstaclePhraseFromYamlNode::updatePosition() {
     }
 
     transform_now_ = transform_now.toHomogeneousMatrix();
-    time_ += 1.0 / static_cast<double>(frequency_);
+}
+
+void ObstaclePhraseFromYamlNode::obstacleInfoReport(std::string& report) const {
+    std::ostringstream oss;
+    oss << "Obstacle Information:\n";
+    oss << "  Name: " << name_ << "\n";
+    oss << "  Primitive Type: " << primitiveType << "\n";
+
+    if (primitiveDimension.size() > 3) {
+        oss << "  Warning: Obstacle has more than 3 dimensions. Only the first 3 will be displayed.\n";
+    }
+
+    oss << "  Primitive Dimensions: ["
+        << (primitiveDimension.size() > 0 ? std::to_string(primitiveDimension[0]) : "N/A") << ", "
+        << (primitiveDimension.size() > 1 ? std::to_string(primitiveDimension[1]) : "N/A") << ", "
+        << (primitiveDimension.size() > 2 ? std::to_string(primitiveDimension[2]) : "N/A") << "]\n";
+
+    oss << "  Initial Transform:\n" << transform_initial_.format(Eigen::IOFormat(Eigen::FullPrecision)) << "\n";
+    oss << "  Velocity (Linear): " << velocity_v_.transpose().format(Eigen::IOFormat(Eigen::FullPrecision)) << "\n";
+    oss << "  Velocity (Angular): " << velocity_w_.transpose().format(Eigen::IOFormat(Eigen::FullPrecision)) << "\n";
+    oss << "  Use Velocity as Twist: " << (use_velocity_as_twist_ ? "true" : "false");
+
+    report = oss.str();
 }
 
 } // namespace robot_env_publisher

@@ -10,15 +10,23 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
+  rospy
   roslib
   moveit_msgs
   visualization_msgs
+  rosgraph_msgs
+  dynamic_reconfigure
 )
 
 ## System dependencies are found with CMake's conventions
 find_package(yaml-cpp REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(pinocchio REQUIRED)
+
+## Generate dynamic reconfigure parameters in the 'cfg' folder
+generate_dynamic_reconfigure_options(
+  cfg/TimeControl.cfg
+)
 
 ###################################
 ## catkin specific configuration ##
@@ -35,6 +43,15 @@ catkin_package(
 #  CATKIN_DEPENDS moveit_msgs roscpp rospy std_msgs yaml-cpp
 #  DEPENDS system_lib
 )
+
+############
+## Python ##
+############
+## Add Python executables
+catkin_install_python(PROGRAMS 
+  scripts/publish_clock.py
+  scripts/publish_clock_slidebar.py
+DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 ###########
 ## Build ##
