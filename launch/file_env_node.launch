@@ -1,0 +1,11 @@
+<launch>
+    <arg name="env_scene" default="obstacles_example_dynamic.yaml"/>
+    <arg name="frequency" default="10"/>
+    <arg name="enable_marker_visualization" default="true"/>
+
+    <node pkg="robot_env_publisher" type="file_env_node" name="dynamic_obstacle_publisher" output="screen">
+        <param name="env_scene" value="$(arg env_scene)"/>
+        <param name="frequency" value="$(arg frequency)"/>
+        <param name="enable_marker_visualization" value="$(arg enable_marker_visualization)"/>
+    </node>
+</launch>

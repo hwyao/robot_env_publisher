@@ -1,0 +1,23 @@
+initial_configuration: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+goal: 
+  position: [0.5, 0.5, 0.5]
+  orientation: [0.0, 0.0, 0.0, 1.0]
+obstacles:
+  - name: "Obstacle1"
+    description:
+      type: "SPHERE"
+      dimensions: [0.05]
+    position: [0.25, 0.5, 0.7]
+    orientation: [0.0, 0.0, 0.0, 1.0]
+    velocity_w: [0.0, 0.0, 0.2]
+    velocity_v: [0.0, 0.02, 0.0]
+    use_velocity_as_twist: true
+  - name: "Obstacle2"
+    description:
+      type: "SPHERE"
+      dimensions: [0.05]
+    position: [-0.13, 0.15, 0.6]
+    orientation: [0.0, 0.0, 0.0, 1.0]
+    velocity_w: [0.0, 0.0, 0.5]
+    velocity_v: [0.0, 0.05, 0.0]
+    use_velocity_as_twist: true
