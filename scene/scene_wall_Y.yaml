@@ -9,8 +9,8 @@ initial_configuration:
 goal:
   position:
   - 0.25
-  - 0
-  - 0.45
+  - 0.40
+  - 0.60
   orientation:
   - 1.0
   - 0.0
