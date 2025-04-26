@@ -49,11 +49,6 @@ int main(int argc, char** argv) {
 
     // Load the YAML file
     YAML::Node env_yaml = YAML::LoadFile(yaml_file_path);
-    
-    // Load the initial configuration as ROS parameter
-    std::vector<double> initial_config;
-    YAMLPhraseWithAssert(env_yaml, "initial_configuration", initial_config);
-    nh.setParam("/initial_configuration", initial_config);
 
     // Load the goal position and rotation
     YAMLPhraseWithAssert(env_yaml["goal"], "position", goal_position, 3);

@@ -1,4 +1,5 @@
-initial_configuration: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+initial_configuration: 
+  panda: [0.0, -0.785398163, 0.0, -2.35619449, 0.0, 1.57079632679, 0.785398163397]
 goal: 
   position: [0.5, 0.5, 0.5]
   orientation: [0.0, 0.0, 0.0, 1.0]
