@@ -1,5 +1,5 @@
 <launch>
-    <arg name="env_scene" default="obstacles_example_dynamic.yaml"/>
+    <arg name="env_scene"/>
     <arg name="frequency" default="10"/>
     <arg name="enable_marker_visualization" default="true"/>
 
