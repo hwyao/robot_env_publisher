@@ -30,7 +30,7 @@ radius = 0.04  # sphere radius
 output = {
     "initial_configuration": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
     "goal": {
-        "position": [0.25, 0, 0.45],
+        "position": [0.40,-0.12, 0.24],
         "orientation": [1.0, 0.0, 0.0, 0.0]
     },
     "obstacles": []
@@ -82,13 +82,13 @@ elif flag == 2:  # wall with hole
 
 elif flag == 3:  # letter I wall
     for i in range(1):
-        for j in range(7):
-            pos = [-0.55 + 0.84 - i * 2 * radius, -0.15, j * 2 * radius + 0.08]
+        for j in range(4):
+            pos = [0.40 - i * 2 * radius, 0, j * 2 * radius + 0.08]
             vel = [0.0, 0., 0.0]
             output["obstacles"].append(make_obstacle(f"VerticalWall_Ball_{i}_{j}", pos, vel))
     for j in range(5):
-        pos_top = [-0.55 + 1 - j * 2 * radius, -0.15, 0.64]
-        pos_bot = [-0.55 + 1 - j * 2 * radius, -0.15, 0]
+        pos_top = [0.40, 0.16 - j * 2 * radius, 0.40]
+        pos_bot = [0.40, 0.16 - j * 2 * radius, 0]
         vel = [0.0, 0.0, 0.0]
         output["obstacles"].append(make_obstacle(f"TopWall_Ball_{0}_{j}", pos_top, vel))
         output["obstacles"].append(make_obstacle(f"BottomWall_Ball_{0}_{j}", pos_bot, vel))
@@ -127,7 +127,7 @@ elif flag == 6:  # selected z-positions
                 output["obstacles"].append(make_obstacle(f"VerticalWall_Ball_{i}_{j}", pos, vel))
 
 # -------------------- Output YAML --------------------
-with open("scene.yaml", "w") as file:
+with open("scene_wall_I.yaml", "w") as file:
     yaml.dump(output, file, default_flow_style=False, sort_keys=False)
 
-print("Generated: scene.yaml")
+print("Gcene_wall_I.yaml")

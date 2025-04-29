@@ -1,16 +1,10 @@
-initial_configuration:
-- 0.0
-- 0.0
-- 0.0
-- 0.0
-- 0.0
-- 0.0
-- 0.0
+initial_configuration: 
+  panda: [-0.56, -1.4, 1.78, -2.86, 2.897, 2.781, -1.039]
 goal:
   position:
-  - 0.25
-  - 0
-  - 0.45
+  - 0.29
+  - -0.12
+  - 0.24
   orientation:
   - 1.0
   - 0.0
@@ -23,8 +17,8 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.2899999999999999
-  - -0.15
+  - 0.4
+  - 0
   - 0.08
   orientation:
   - 0.0
@@ -46,8 +40,8 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.2899999999999999
-  - -0.15
+  - 0.4
+  - 0
   - 0.16
   orientation:
   - 0.0
@@ -69,8 +63,8 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.2899999999999999
-  - -0.15
+  - 0.4
+  - 0
   - 0.24
   orientation:
   - 0.0
@@ -92,78 +86,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.2899999999999999
-  - -0.15
-  - 0.32
-  orientation:
-  - 0.0
-  - 0.0
-  - 0.0
-  - 1.0
-  velocity_w:
-  - 0.0
-  - 0.0
-  - 0.0
-  velocity_v:
-  - 0.0
-  - 0.0
-  - 0.0
-  use_velocity_as_twist: true
-- name: VerticalWall_Ball_0_4
-  description:
-    type: SPHERE
-    dimensions:
-    - 0.04
-  position:
-  - 0.2899999999999999
-  - -0.15
   - 0.4
-  orientation:
-  - 0.0
-  - 0.0
-  - 0.0
-  - 1.0
-  velocity_w:
-  - 0.0
-  - 0.0
-  - 0.0
-  velocity_v:
-  - 0.0
-  - 0.0
-  - 0.0
-  use_velocity_as_twist: true
-- name: VerticalWall_Ball_0_5
-  description:
-    type: SPHERE
-    dimensions:
-    - 0.04
-  position:
-  - 0.2899999999999999
-  - -0.15
-  - 0.48000000000000004
-  orientation:
-  - 0.0
-  - 0.0
-  - 0.0
-  - 1.0
-  velocity_w:
-  - 0.0
-  - 0.0
-  - 0.0
-  velocity_v:
-  - 0.0
-  - 0.0
-  - 0.0
-  use_velocity_as_twist: true
-- name: VerticalWall_Ball_0_6
-  description:
-    type: SPHERE
-    dimensions:
-    - 0.04
-  position:
-  - 0.2899999999999999
-  - -0.15
-  - 0.5599999999999999
+  - 0
+  - 0.32
   orientation:
   - 0.0
   - 0.0
@@ -184,9 +109,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.44999999999999996
-  - -0.15
-  - 0.64
+  - 0.4
+  - 0.16
+  - 0.4
   orientation:
   - 0.0
   - 0.0
@@ -207,8 +132,8 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.44999999999999996
-  - -0.15
+  - 0.4
+  - 0.16
   - 0
   orientation:
   - 0.0
@@ -227,9 +152,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.36999999999999994
-  - -0.15
-  - 0.64
+  - 0.4
+  - 0.08
+  - 0.4
   orientation:
   - 0.0
   - 0.0
@@ -250,8 +175,8 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.36999999999999994
-  - -0.15
+  - 0.4
+  - 0.08
   - 0
   orientation:
   - 0.0
@@ -270,9 +195,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.2899999999999999
-  - -0.15
-  - 0.64
+  - 0.4
+  - 0.0
+  - 0.4
   orientation:
   - 0.0
   - 0.0
@@ -293,8 +218,8 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.2899999999999999
-  - -0.15
+  - 0.4
+  - 0.0
   - 0
   orientation:
   - 0.0
@@ -313,9 +238,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.20999999999999996
-  - -0.15
-  - 0.64
+  - 0.4
+  - -0.07999999999999999
+  - 0.4
   orientation:
   - 0.0
   - 0.0
@@ -336,8 +261,8 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.20999999999999996
-  - -0.15
+  - 0.4
+  - -0.07999999999999999
   - 0
   orientation:
   - 0.0
@@ -356,9 +281,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.12999999999999995
-  - -0.15
-  - 0.64
+  - 0.4
+  - -0.16
+  - 0.4
   orientation:
   - 0.0
   - 0.0
@@ -379,8 +304,8 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.12999999999999995
-  - -0.15
+  - 0.4
+  - -0.16
   - 0
   orientation:
   - 0.0
