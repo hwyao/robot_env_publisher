@@ -30,7 +30,7 @@ radius = 0.04  # sphere radius
 output = {
     "initial_configuration": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
     "goal": {
-        "position": [0.40,-0.12, 0.24],
+        "position": [0.20,0.32, 0.30],
         "orientation": [1.0, 0.0, 0.0, 0.0]
     },
     "obstacles": []
@@ -83,12 +83,12 @@ elif flag == 2:  # wall with hole
 elif flag == 3:  # letter I wall
     for i in range(1):
         for j in range(4):
-            pos = [0.40 - i * 2 * radius, 0, j * 2 * radius + 0.08]
+            pos = [0.50 - i * 2 * radius, 0, 0.2 + j * 2 * radius + 0.08]
             vel = [0.0, 0., 0.0]
             output["obstacles"].append(make_obstacle(f"VerticalWall_Ball_{i}_{j}", pos, vel))
     for j in range(5):
-        pos_top = [0.40, 0.16 - j * 2 * radius, 0.40]
-        pos_bot = [0.40, 0.16 - j * 2 * radius, 0]
+        pos_top = [0.50, 0.16 - j * 2 * radius, 0.2 + 0.40]
+        pos_bot = [0.50, 0.16 - j * 2 * radius, 0.2 + 0]
         vel = [0.0, 0.0, 0.0]
         output["obstacles"].append(make_obstacle(f"TopWall_Ball_{0}_{j}", pos_top, vel))
         output["obstacles"].append(make_obstacle(f"BottomWall_Ball_{0}_{j}", pos_bot, vel))
@@ -127,7 +127,80 @@ elif flag == 6:  # selected z-positions
                 output["obstacles"].append(make_obstacle(f"VerticalWall_Ball_{i}_{j}", pos, vel))
 
 # -------------------- Output YAML --------------------
-with open("scene_wall_I.yaml", "w") as file:
+elif flag == 8:  # Tetris Russian bar
+    # Define the bar as a vertical structure
+    z_level = 0.5  # Fixed z-level for the bar
+    x_start = 0.2  # Starting x position
+    y_start = 0.3  # Fixed y position
+
+    # Add 4 obstacles to form the bar
+    for i in range(4):  # 4 obstacles in a vertical line
+        pos = [x_start, y_start, z_level + i * 2 * radius]  # Increment z for each obstacle
+        vel = [0.0, -0.05, 0.0]  # Static obstacles
+        output["obstacles"].append(make_obstacle(f"TetrisBar_Ball_{i}", pos, vel))
+
+    z_level = 0.62  # Fixed z-level for the bar
+    x_start = 0.3  # Starting x position
+    y_start = 0.3  # Fixed y position
+
+    # Add 4 obstacles to form the bar
+    for i in range(4):  # 4 obstacles in a horizontal line
+        pos = [x_start + i * 2 * radius, y_start, z_level]  # Increment x for each obstacle
+        vel = [0.0, -0.05, 0.0]  # Static obstacles
+        output["obstacles"].append(make_obstacle(f"TetrisBar_YFixed_Ball_{i}", pos, vel))    
+
+    z_level = 0.2  # Fixed z-level for the bar
+    x_start = 0.22  # Starting x position
+    y_start = 0.3  # Fixed y position
+
+    # Add 4 obstacles to form the bar
+    for i in range(4):  # 4 obstacles in a horizontal line
+        pos = [x_start + i * 2 * radius, y_start, z_level]  # Increment x for each obstacle
+        vel = [0.0, -0.05, 0.0]  # Static obstacles
+        output["obstacles"].append(make_obstacle(f"TetrisBar_YFixed_Ball_{i}", pos, vel))   
+
+    z_level = 0.2  # Fixed z-level for the bar
+    x_start = 0.14  # Fixed x position
+    y_start = 0.3  # Starting y position
+
+    # Add 4 obstacles to form the bar
+    for i in range(4):  # 4 obstacles in a horizontal line
+        pos = [x_start, y_start + i * 2 * radius, z_level]  # Increment y for each obstacle
+        vel = [0.0, -0.05, 0.0]  # Static obstacles
+        output["obstacles"].append(make_obstacle(f"TetrisBar_XFixed_Ball_{i}", pos, vel))
+
+    # Define the bar as a vertical structure
+    z_level = 0.5  # Fixed z-level for the bar
+    x_start = 0.12  # Starting x position
+    y_start = 0.3  # Fixed y position
+
+    # Add 4 obstacles to form the bar
+    for i in range(4):  # 4 obstacles in a vertical line
+        pos = [x_start, y_start, z_level + i * 2 * radius]  # Increment z for each obstacle
+        vel = [0.0, -0.05, 0.0]  # Static obstacles
+        output["obstacles"].append(make_obstacle(f"TetrisBar_Ball_{i}", pos, vel))
+    # Define the bar as a vertical structure
+    z_level = 0.5  # Fixed z-level for the bar
+    x_start = 0.04  # Starting x position
+    y_start = 0.3  # Fixed y position
+
+    # Add 4 obstacles to form the bar
+    for i in range(4):  # 4 obstacles in a vertical line
+        pos = [x_start, y_start, z_level + i * 2 * radius]  # Increment z for each obstacle
+        vel = [0.0, -0.05, 0.0]  # Static obstacles
+        output["obstacles"].append(make_obstacle(f"TetrisBar_Ball_{i}", pos, vel))     
+
+    z_level = 0.28  # Fixed z-level for the bar
+    x_start = 0.14  # Starting x position
+    y_start = 0.46  # Fixed y position
+
+    # Add 4 obstacles to form the bar
+    for i in range(5):  # 4 obstacles in a horizontal line
+        pos = [x_start + i * 2 * radius, y_start, z_level]  # Increment x for each obstacle
+        vel = [0.0, -0.05, 0.0]  # Static obstacles
+        output["obstacles"].append(make_obstacle(f"TetrisBar_YFixed_Ball_{i}", pos, vel))               
+# -------------------- Output YAML --------------------
+with open("figureA33.yaml", "w") as file:
     yaml.dump(output, file, default_flow_style=False, sort_keys=False)
 
-print("Gcene_wall_I.yaml")
+print("figureA33.yaml")

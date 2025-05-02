@@ -89,14 +89,14 @@ int main(int argc, char** argv) {
     // set up the publishers
     ros::Publisher goal_pub = nh.advertise<geometry_msgs::PoseStamped>("goal", 1);
     ros::Publisher obstacle_pub = nh.advertise<moveit_msgs::PlanningScene>("planning_scene", 1);
-    ros::Publisher obstacle_vis_pub = nh.advertise<visualization_msgs::MarkerArray>("obstacle_markers", 10);
+    ros::Publisher obstacle_vis_pub = nh.advertise<visualization_msgs::MarkerArray>("obstacle_markers", 35);
 
     // Subscribe to the /clock topic
     ros::Subscriber clock_sub = nh.subscribe("/clock", 1, clockCallback);
     
     // pre allocate the message to be published
     geometry_msgs::PoseStamped goal_msg;
-    goal_msg.header.frame_id = "world";
+    goal_msg.header.frame_id = "world"; //panda_link0   world
     goal_msg.pose.position.x = goal_position[0];
     goal_msg.pose.position.y = goal_position[1];
     goal_msg.pose.position.z = goal_position[2];
@@ -173,7 +173,7 @@ int main(int argc, char** argv) {
                     obstacle_vis_marker.color.r = 0.0;
                     obstacle_vis_marker.color.g = 0.0;
                     obstacle_vis_marker.color.b = 1.0;
-                    obstacle_vis_marker.color.a = 0.6; 
+                    obstacle_vis_marker.color.a = 1.0; 
 
                     obstacle_vis_markers.markers.push_back(obstacle_vis_marker);
                 } else {
