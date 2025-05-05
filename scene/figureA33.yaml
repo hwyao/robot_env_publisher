@@ -10,7 +10,7 @@ goal:
   position:
   - 0.2
   - 0.32
-  - 0.4
+  - 0.3
   orientation:
   - 1.0
   - 0.0
@@ -37,7 +37,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_Ball_1
@@ -60,7 +60,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_Ball_2
@@ -83,7 +83,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_Ball_3
@@ -106,7 +106,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_YFixed_Ball_0
@@ -129,7 +129,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_YFixed_Ball_1
@@ -152,7 +152,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_YFixed_Ball_2
@@ -175,7 +175,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_YFixed_Ball_3
@@ -198,7 +198,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_YFixed_Ball_0
@@ -221,7 +221,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_YFixed_Ball_1
@@ -244,7 +244,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_YFixed_Ball_2
@@ -267,7 +267,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_YFixed_Ball_3
@@ -290,7 +290,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_XFixed_Ball_0
@@ -313,7 +313,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_XFixed_Ball_1
@@ -336,7 +336,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_XFixed_Ball_2
@@ -359,7 +359,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_XFixed_Ball_3
@@ -382,7 +382,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_Ball_0
@@ -405,7 +405,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_Ball_1
@@ -428,7 +428,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_Ball_2
@@ -451,7 +451,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_Ball_3
@@ -474,7 +474,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_Ball_0
@@ -497,7 +497,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_Ball_1
@@ -520,7 +520,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_Ball_2
@@ -543,7 +543,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_Ball_3
@@ -566,7 +566,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_YFixed_Ball_0
@@ -589,7 +589,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_YFixed_Ball_1
@@ -612,7 +612,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_YFixed_Ball_2
@@ -635,7 +635,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_YFixed_Ball_3
@@ -658,7 +658,7 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true
 - name: TetrisBar_YFixed_Ball_4
@@ -681,6 +681,6 @@ obstacles:
   - 0.0
   velocity_v:
   - 0.0
-  - -0.05
+  - -0.08
   - 0.0
   use_velocity_as_twist: true

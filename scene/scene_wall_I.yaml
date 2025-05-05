@@ -1,14 +1,14 @@
 initial_configuration:
-- 0.4
-- 0.4
-- 0.4
-- 0.4
-- 0.3
-- 0.4
-- 0.4
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
 goal:
   position:
-  - 0.29
+  - 0.4
   - -0.12
   - 0.24
   orientation:
@@ -23,9 +23,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.4
+  - 0.5
   - 0
-  - 0.08
+  - 0.28
   orientation:
   - 0.0
   - 0.0
@@ -46,9 +46,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.4
+  - 0.5
   - 0
-  - 0.16
+  - 0.36000000000000004
   orientation:
   - 0.0
   - 0.0
@@ -69,9 +69,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.4
+  - 0.5
   - 0
-  - 0.24
+  - 0.44
   orientation:
   - 0.0
   - 0.0
@@ -92,9 +92,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.4
+  - 0.5
   - 0
-  - 0.32
+  - 0.52
   orientation:
   - 0.0
   - 0.0
@@ -115,9 +115,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.4
+  - 0.5
   - 0.16
-  - 0.4
+  - 0.6000000000000001
   orientation:
   - 0.0
   - 0.0
@@ -138,9 +138,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.4
+  - 0.5
   - 0.16
-  - 0
+  - 0.2
   orientation:
   - 0.0
   - 0.0
@@ -158,9 +158,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.4
+  - 0.5
   - 0.08
-  - 0.4
+  - 0.6000000000000001
   orientation:
   - 0.0
   - 0.0
@@ -181,9 +181,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.4
+  - 0.5
   - 0.08
-  - 0
+  - 0.2
   orientation:
   - 0.0
   - 0.0
@@ -201,9 +201,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.4
+  - 0.5
   - 0.0
-  - 0.4
+  - 0.6000000000000001
   orientation:
   - 0.0
   - 0.0
@@ -224,9 +224,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.4
+  - 0.5
   - 0.0
-  - 0
+  - 0.2
   orientation:
   - 0.0
   - 0.0
@@ -244,9 +244,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.4
+  - 0.5
   - -0.07999999999999999
-  - 0.4
+  - 0.6000000000000001
   orientation:
   - 0.0
   - 0.0
@@ -267,9 +267,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.4
+  - 0.5
   - -0.07999999999999999
-  - 0
+  - 0.2
   orientation:
   - 0.0
   - 0.0
@@ -287,9 +287,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.4
+  - 0.5
   - -0.16
-  - 0.4
+  - 0.6000000000000001
   orientation:
   - 0.0
   - 0.0
@@ -310,9 +310,9 @@ obstacles:
     dimensions:
     - 0.04
   position:
-  - 0.4
+  - 0.5
   - -0.16
-  - 0
+  - 0.2
   orientation:
   - 0.0
   - 0.0
