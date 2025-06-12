@@ -2,8 +2,6 @@
 
 Reads in the YAML in a specific format and publish the obstacle environment message [`moveit_msgs/PlanningScene`](http://docs.ros.org/en/noetic/api/moveit_msgs/html/msg/PlanningScene.html) according to the time.
 
-Obstacles are stored in message: `planning_scene.world.collision_objects`. Object 
-
 ![description](./image/README_1.drawio.png)
 
 ## Installation
