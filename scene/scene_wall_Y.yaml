@@ -1,0 +1,2296 @@
+initial_configuration:
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+goal:
+  position:
+  - 0.25
+  - 0.40
+  - 0.60
+  orientation:
+  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+obstacles:
+- name: VerticalWall_Ball_0_0
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.1
+  - 0.2
+  - 0.08
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_0_1
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.1
+  - 0.2
+  - 0.16
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_0_2
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.1
+  - 0.2
+  - 0.24
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_0_3
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.1
+  - 0.2
+  - 0.32
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_0_4
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.1
+  - 0.2
+  - 0.4
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_0_5
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.1
+  - 0.2
+  - 0.48000000000000004
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_0_6
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.1
+  - 0.2
+  - 0.5599999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_0_7
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.1
+  - 0.2
+  - 0.64
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_0_8
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.1
+  - 0.2
+  - 0.72
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_0_9
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.1
+  - 0.2
+  - 0.7999999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_0_10
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.1
+  - 0.2
+  - 0.88
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_1_0
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.18
+  - 0.2
+  - 0.08
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_1_1
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.18
+  - 0.2
+  - 0.16
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_1_2
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.18
+  - 0.2
+  - 0.24
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_1_3
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.18
+  - 0.2
+  - 0.32
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_1_4
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.18
+  - 0.2
+  - 0.4
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_1_5
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.18
+  - 0.2
+  - 0.48000000000000004
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_1_6
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.18
+  - 0.2
+  - 0.5599999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_1_7
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.18
+  - 0.2
+  - 0.64
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_1_8
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.18
+  - 0.2
+  - 0.72
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_1_9
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.18
+  - 0.2
+  - 0.7999999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_1_10
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.18
+  - 0.2
+  - 0.88
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_2_0
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.26
+  - 0.2
+  - 0.08
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_2_1
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.26
+  - 0.2
+  - 0.16
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_2_2
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.26
+  - 0.2
+  - 0.24
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_2_3
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.26
+  - 0.2
+  - 0.32
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_2_4
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.26
+  - 0.2
+  - 0.4
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_2_5
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.26
+  - 0.2
+  - 0.48000000000000004
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_2_6
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.26
+  - 0.2
+  - 0.5599999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_2_7
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.26
+  - 0.2
+  - 0.64
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_2_8
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.26
+  - 0.2
+  - 0.72
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_2_9
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.26
+  - 0.2
+  - 0.7999999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_2_10
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.26
+  - 0.2
+  - 0.88
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_3_0
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.33999999999999997
+  - 0.2
+  - 0.08
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_3_1
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.33999999999999997
+  - 0.2
+  - 0.16
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_3_2
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.33999999999999997
+  - 0.2
+  - 0.24
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_3_3
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.33999999999999997
+  - 0.2
+  - 0.32
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_3_4
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.33999999999999997
+  - 0.2
+  - 0.4
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_3_5
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.33999999999999997
+  - 0.2
+  - 0.48000000000000004
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_3_6
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.33999999999999997
+  - 0.2
+  - 0.5599999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_3_7
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.33999999999999997
+  - 0.2
+  - 0.64
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_3_8
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.33999999999999997
+  - 0.2
+  - 0.72
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_3_9
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.33999999999999997
+  - 0.2
+  - 0.7999999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_3_10
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.33999999999999997
+  - 0.2
+  - 0.88
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_4_0
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.42000000000000004
+  - 0.2
+  - 0.08
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_4_1
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.42000000000000004
+  - 0.2
+  - 0.16
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_4_2
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.42000000000000004
+  - 0.2
+  - 0.24
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_4_3
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.42000000000000004
+  - 0.2
+  - 0.32
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_4_4
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.42000000000000004
+  - 0.2
+  - 0.4
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_4_5
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.42000000000000004
+  - 0.2
+  - 0.48000000000000004
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_4_6
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.42000000000000004
+  - 0.2
+  - 0.5599999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_4_7
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.42000000000000004
+  - 0.2
+  - 0.64
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_4_8
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.42000000000000004
+  - 0.2
+  - 0.72
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_4_9
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.42000000000000004
+  - 0.2
+  - 0.7999999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_4_10
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.42000000000000004
+  - 0.2
+  - 0.88
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_5_0
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.5
+  - 0.2
+  - 0.08
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_5_1
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.5
+  - 0.2
+  - 0.16
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_5_2
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.5
+  - 0.2
+  - 0.24
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_5_3
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.5
+  - 0.2
+  - 0.32
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_5_4
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.5
+  - 0.2
+  - 0.4
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_5_5
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.5
+  - 0.2
+  - 0.48000000000000004
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_5_6
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.5
+  - 0.2
+  - 0.5599999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_5_7
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.5
+  - 0.2
+  - 0.64
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_5_8
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.5
+  - 0.2
+  - 0.72
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_5_9
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.5
+  - 0.2
+  - 0.7999999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_5_10
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.5
+  - 0.2
+  - 0.88
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_6_0
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.58
+  - 0.2
+  - 0.08
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_6_1
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.58
+  - 0.2
+  - 0.16
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_6_2
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.58
+  - 0.2
+  - 0.24
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_6_3
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.58
+  - 0.2
+  - 0.32
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_6_4
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.58
+  - 0.2
+  - 0.4
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_6_5
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.58
+  - 0.2
+  - 0.48000000000000004
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_6_6
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.58
+  - 0.2
+  - 0.5599999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_6_7
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.58
+  - 0.2
+  - 0.64
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_6_8
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.58
+  - 0.2
+  - 0.72
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_6_9
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.58
+  - 0.2
+  - 0.7999999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_6_10
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.58
+  - 0.2
+  - 0.88
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_7_0
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.66
+  - 0.2
+  - 0.08
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_7_1
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.66
+  - 0.2
+  - 0.16
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_7_2
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.66
+  - 0.2
+  - 0.24
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_7_3
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.66
+  - 0.2
+  - 0.32
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_7_4
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.66
+  - 0.2
+  - 0.4
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_7_5
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.66
+  - 0.2
+  - 0.48000000000000004
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_7_6
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.66
+  - 0.2
+  - 0.5599999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_7_7
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.66
+  - 0.2
+  - 0.64
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_7_8
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.66
+  - 0.2
+  - 0.72
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_7_9
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.66
+  - 0.2
+  - 0.7999999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_7_10
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.66
+  - 0.2
+  - 0.88
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_8_0
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.74
+  - 0.2
+  - 0.08
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_8_1
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.74
+  - 0.2
+  - 0.16
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_8_2
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.74
+  - 0.2
+  - 0.24
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_8_3
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.74
+  - 0.2
+  - 0.32
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_8_4
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.74
+  - 0.2
+  - 0.4
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_8_5
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.74
+  - 0.2
+  - 0.48000000000000004
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_8_6
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.74
+  - 0.2
+  - 0.5599999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_8_7
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.74
+  - 0.2
+  - 0.64
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_8_8
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.74
+  - 0.2
+  - 0.72
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_8_9
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.74
+  - 0.2
+  - 0.7999999999999999
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true
+- name: VerticalWall_Ball_8_10
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.74
+  - 0.2
+  - 0.88
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - 0.0
+  - 0.0
+  use_velocity_as_twist: true

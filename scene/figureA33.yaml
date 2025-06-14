@@ -1,0 +1,686 @@
+initial_configuration:
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+goal:
+  position:
+  - 0.2
+  - 0.32
+  - 0.3
+  orientation:
+  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+obstacles:
+- name: TetrisBar_Ball_0
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.2
+  - 0.3
+  - 0.5
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_Ball_1
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.2
+  - 0.3
+  - 0.58
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_Ball_2
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.2
+  - 0.3
+  - 0.66
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_Ball_3
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.2
+  - 0.3
+  - 0.74
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_YFixed_Ball_0
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.3
+  - 0.3
+  - 0.62
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_YFixed_Ball_1
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.38
+  - 0.3
+  - 0.62
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_YFixed_Ball_2
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.45999999999999996
+  - 0.3
+  - 0.62
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_YFixed_Ball_3
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.54
+  - 0.3
+  - 0.62
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_YFixed_Ball_0
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.22
+  - 0.3
+  - 0.2
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_YFixed_Ball_1
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.3
+  - 0.3
+  - 0.2
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_YFixed_Ball_2
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.38
+  - 0.3
+  - 0.2
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_YFixed_Ball_3
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.45999999999999996
+  - 0.3
+  - 0.2
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_XFixed_Ball_0
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.14
+  - 0.3
+  - 0.2
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_XFixed_Ball_1
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.14
+  - 0.38
+  - 0.2
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_XFixed_Ball_2
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.14
+  - 0.45999999999999996
+  - 0.2
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_XFixed_Ball_3
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.14
+  - 0.54
+  - 0.2
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_Ball_0
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.12
+  - 0.3
+  - 0.5
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_Ball_1
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.12
+  - 0.3
+  - 0.58
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_Ball_2
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.12
+  - 0.3
+  - 0.66
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_Ball_3
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.12
+  - 0.3
+  - 0.74
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_Ball_0
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.04
+  - 0.3
+  - 0.5
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_Ball_1
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.04
+  - 0.3
+  - 0.58
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_Ball_2
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.04
+  - 0.3
+  - 0.66
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_Ball_3
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.04
+  - 0.3
+  - 0.74
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_YFixed_Ball_0
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.14
+  - 0.46
+  - 0.28
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_YFixed_Ball_1
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.22000000000000003
+  - 0.46
+  - 0.28
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_YFixed_Ball_2
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.30000000000000004
+  - 0.46
+  - 0.28
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_YFixed_Ball_3
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.38
+  - 0.46
+  - 0.28
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true
+- name: TetrisBar_YFixed_Ball_4
+  description:
+    type: SPHERE
+    dimensions:
+    - 0.04
+  position:
+  - 0.46
+  - 0.46
+  - 0.28
+  orientation:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  velocity_w:
+  - 0.0
+  - 0.0
+  - 0.0
+  velocity_v:
+  - 0.0
+  - -0.08
+  - 0.0
+  use_velocity_as_twist: true

@@ -1,0 +1,33 @@
+initial_configuration: 
+  panda: [0.0, -0.785398163, 0.0, -2.35619449, 0.0, 1.57079632679, 0.785398163397]
+goal: 
+  position: [0.3, 0.3, 0.5]
+  orientation: [0.0, 0.0, 0.0, 1.0]
+obstacles:
+  - name: "Obstacle1"
+    description:
+      type: "SPHERE"
+      dimensions: [0.05]
+    position: [0.25, 0.5, 0.7]
+    orientation: [0.0, 0.0, 0.0, 1.0]
+    velocity_w: [0.0, 0.0, 0.2]
+    velocity_v: [0.0, 0.02, 0.0]
+    use_velocity_as_twist: true
+  - name: "Obstacle2"
+    description:
+      type: "SPHERE"
+      dimensions: [0.05]
+    position: [-0.15, 0.18, 0.6]
+    orientation: [0.0, 0.0, 0.0, 1.0]
+    velocity_w: [0.0, 0.0, 0.3]
+    velocity_v: [0.0, 0.03, 0.0]
+    use_velocity_as_twist: true
+  - name: "Obstacle3"
+    description:
+      type: "SPHERE"
+      dimensions: [0.05]
+    position: [0.05, 0.15, 0.7]
+    orientation: [0.0, 0.0, 0.0, 1.0]
+    velocity_w: [0.0, 0.0, 0.5]
+    velocity_v: [0.0, 0.05, 0.0]
+    use_velocity_as_twist: true
